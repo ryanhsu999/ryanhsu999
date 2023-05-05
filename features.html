@@ -1,122 +1,405 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-  <head><script src="./assets/js/color-modes.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.111.3">
-    <title>Cover Template · Bootstrap v5.3</title>
-
-    
-
-    
-
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+<head>
+  <script src="./assets/js/color-modes.js"></script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>features</title>
+  
+  
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+  
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-    </style>
-    </style>
+    }
+  
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+  
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+  
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+  
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+  
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+  
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+  </style>
+  </style>
   </head>
-
+  
   <body>
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="pictures/Letter R 3 PNG 2 42723 copy.png" alt="Logo" width="40" class="d-inline-block align-text-middle">
-            Ryan Hsu
-          </a>
+            <img src="Pictures from LRC/Letter R 3 wpeb 42723 copy 2PNG.png" alt="Logo" width="20"
+            class="d-inline-block align-text-middle"> Ryan Hsu </a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
+                <a class="nav-link active" aria-current="page" href="./resume.html">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Features.html">Features</a>
+                <a class="nav-link" href="features.html">features</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Features</h1>
+          <p class="lead text-body-secondary">
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Project THANK YOU cards </h5>
+                <p class="card-text">Used the power Adobe photoshop and Illustrator sprend Kindness to others. For me to
+                  show my thank to those for give a light and encouraging me to develop further</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                      data-bs-target="#box6Modal">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Procreate </h5>
+                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                      data-bs-target="#box3Modal">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Square collection </h5>
+                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                      data-bs-target="#box5Modal">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Project Earth day & Grey Water Project: Earth Day Competition 2023 </h5>
+                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                    data-bs-target="#box1Modal">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Earth montage </h5>
+                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                    data-bs-target="#box3Modal">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="pictures/" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">website html UI/UX </h5>
+                <p class="card-text"> This is a my step in bulding this website. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                    data-bs-target="#box7Modal">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+        <div class="modal fade" id="box1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Project Earth day & Grey Water Project: Earth Day Competition 2023</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="pictures/" class="card-img-top" alt="">
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="box3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Earth montage</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="pictures/" class="card-img-top" alt="">
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="modal fade" id="box7Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">website html UI/UX</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+        <h5>Terms</h5>
+        <h6> UX/UI:User interface design/ user interface engineering designing interfaces for all Devices.</h6>
+          <h6>HTML (HyperText Markup Language) is ordinary markup language for web-based documents </h6>
+          <h6> VS Code (Visual Studio Code) contribute debugging, syntax highlighting, intelligent code completion,
+            snippets, and Git incorporation.</h6>
+            <img src="Pictures from LRC/large/Screen_Shot_2023-05-03_at_10.52.46_PM.jpg" class="card-img-top" alt="">
+
+            <h6>Github: A website for hosting projects and development version control useing Git.</h6>
+            <h6> Git is a free open source version control system.</h6>
+            <h6> Github repository: record keeping for projects.</h6>
+            <img src="Pictures from LRC/large/Screen_Shot_2023-05-03_at_10.53.07_PM.jpg" class="card-img-top" alt="">
+            <h6> Get bootstrap: HTML support website with code and examples of a webpage UX/UI</h6>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
     
-  </body>
-</html>
+  
+  
+        <div class="modal fade" id="box4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Business Cards files</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="Pictures from LRC/large/squrea collection 1 of 3 may 4 23 copy 2 .jpg copy.jpg" class="card-img-top" alt="">
+                <img src="Pictures from LRC/large/squrea_collection_1_of_5_may_4_23_.jpg" class="card-img-top" alt="">
+                <img src="Pictures from LRC/large/squrea_collection_3_of_5_may_4_23_.jpg.jpg" class="card-img-top" alt="">
+
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="box6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Project THANK YOU cards files</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="pictures/" class="card-img-top" alt="">
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="box6Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Project thank you Cards files</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="Pictures from LRC/large/JPN_card_test_may_4_23_.jpg" class="card-img-top" alt="">
+
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" id="box5Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Square collection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
 
 
-    
+                <img src="Pictures from LRC/large/squrea collection 1 of 3 may 4 23 copy 2 .jpg copy.jpg" class="card-img-top" alt="">
+                <img src="Pictures from LRC/large/squrea_collection_1_of_5_may_4_23_.jpg" class="card-img-top" alt="">
+                <img src="Pictures from LRC/large/squrea_collection_3_of_5_may_4_23_.jpg.jpg" class="card-img-top" alt="">
+                <!-- <p> this was the first Assignment at the class. you would need to find your best picture all summer long  -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <footer class="text-body-secondary py-5">
+          <div class="container">
+            <p class="float-end mb-1">
+              <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1"> Ryan Hsu ©2022-2023 All right reserved </p>
+            <p class="mb-0"> Every day we make decisions and use tools to empower others to make work. <a
+                href="../getting-started/introduction/"></a></p>
+          </div>
+        </footer>
+  
+        <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-</html>
+  
+  </html>
