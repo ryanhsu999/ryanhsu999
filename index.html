@@ -1,75 +1,152 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 
-<head>
-  <script src="./assets/js/color-modes.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Image Link</title>
+    <style>
+      .image-link {
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border-color 0.3s;
+      }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Ryan Hsu">
-  <title>Ryan Hsu</title>
+      .image-link img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 
-  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      .image-link:hover {
+        border-color: #007BFF;
+      }
+    </style>
 
-</head>
+    <script src="./assets/js/color-modes.js"></script>
 
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ryan Hsu">
+    <title>Ryan Hsu</title>
 
-  <header data-bs-theme="light" class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <a href="./index.html" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Logo" width="40"
-        class="d-inline-block align-text-middle me-2">
-      <span class="fs-4">Ryan Hsu</span>
-    </a>
+  </head>
 
-    <ul class="nav nav-pills ms-4 align-items-center">
-      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="./Ohlone College Class 139A.html" class="nav-link">Ohlone College Class 139A</a></li>
-      <li class="nav-item"><a href="./resume.html" class="nav-link">CV</a></li>
-    </ul>
+  <body>
 
-  </header>
+    <header data-bs-theme="light" class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 
-  <div class="container">
+      <a href="./index.html"
+        class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Logo" width="40"
+          class="d-inline-block align-text-middle me-2">
+        <span class="fs-4">Ryan Hsu</span>
+      </a>
 
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-4 mx-auto">
-          <img src="./ryanhsu.jpg" alt="Ryan Hsu" style="width:300px">
-        </div>
+      <ul class="nav nav-pills ms-4 align-items-center">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
 
-        <div class="col-lg-8 mx-auto">
-          <h1>Ryan Hsu</h1>
-          <h4>Student attending Ohlone College</h4>
+        <li class="nav-item"><a href="./OhloneCollegeClass139A.html" class="nav-link">Ohlone College Course Art-139A</a>
+        </li>
+        <li class="nav-item"><a href="./PD-150-05.html" class="nav-link "> Ohlone College course PD-150</a></li>
+        <li class="nav-item"><a href="./resume.html" class="nav-link">CV & resume</a></li>
 
-          <!-- <h2>High school student planning to get Design Certificate at Ohlone College to get job in Design field.</h2> -->
-          <!-- <h4>School: American High School Fremont CA & Ohlone College</h4> -->
-          <!-- <h4>Program: Mission Valley Regional Occupational Program </h4> -->
-        </div>
-      </div>
-    </section>
-  </div>
-  
+        <!-- <li class="nav-item"><a href="./comingsoon.html" class="nav-link">Coming soon</a></li> -->
 
-  
+      </ul>
 
 
-  <footer class="text-body-secondary py-5">
+      <!-- <div class="text-overlay">Click here for more information</div> -->
+
+    </header>
+
     <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
 
-      <p class="mb-1"> Ryan Hsu ©2022-2023 All right reserved </p>
-      <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
-      <p class="mb-1"> Version 1.0.1 Ocean </p>
+      <section class="py-5 container">
+        <div class="row py-lg-5">
+          <div class="col-lg-4 mx-auto">
+            <img src="./ryanhsu.jpg" alt="Ryan Hsu waving Hello" style="width:300px">
+          </div>
 
+          <div class="col-lg-8 mx-auto">
+
+            <h1> Welcome to my website
+            </h1>
+            <p>I am Ryan Hsu, I'm currently a student attending Ohlone college. I’m exploring majors in graphic design
+              and tourism with the transfer to CSU East Bay CSUEB. I’m an individual who is open-minded, honest and
+              reliable. I’m also a team player. I believe that everyone has unique ideas to contribute to creative and
+              innovative solutions through collaboration. I also believe that learning is a never-ending journey as one
+              can always learn new skills from others. My interests include using elements of strategy and design,
+              photography, making unique forms of digital art, and gardening.
+            </p>
+            <p>The long-term goal is to explore graphic design or tourism with the transfer to CSUEB.
+            </p>
+
+
+
+            <!-- <h2>High school student planning to get Design Certificate at Ohlone College to get job in Design field.</h2> -->
+            <!-- <h4>School: American High School Fremont CA & Ohlone College</h4> -->
+            <!-- <h4>Program: Mission Valley Regional Occupational Program </h4> -->
+          </div>
+        </div>
+      </section>
     </div>
-  </footer>
 
-  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+
+
+
+
+
+
+
+    <div>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+          <!-- <a href="Ohlone College Class 139A.html" class="Ohlone College Class 139A">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a>
+          <a href="PD-150-05.html" class="Course: PD-150 Career and Life Planning Portfolio">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a>
+          <a href="resume.html" class="CV & resume">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a>
+
+          <a href="Coming soon.html" class="Coming soon">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a>
+          <a href="Coming soon.html" class="Coming soon">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a>
+          <a href="Coming soon.html" class="Coming soon">
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          </a> -->
+
+
+          <footer class="text-body-secondary py-5">
+            <div class="container">
+              <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+              </p>
+
+              <p class="mb-1"> Ryan Hsu ©2022-2024 All right reserved </p>
+              <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
+              <p class="mb-1"> Version 2.0.0 Starlight </p>
+
+
+
+            </div>
+          </footer>
+
+
+          <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>

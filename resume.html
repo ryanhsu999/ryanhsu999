@@ -1,161 +1,201 @@
- <!doctype html>
+<!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 
-<head>
-  <script src="./assets/js/color-modes.js"></script>
+  <head>
+    <script src="./assets/js/color-modes.js"></script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
 
-  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
-    }
 
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
 
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
 
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
 
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
 
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
 
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
 
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
-  </style>
-</head>
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
 
-<body>
-  <header data-bs-theme="light" class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+  </head>
 
-    <a href="./index.html" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Logo" width="40"
-        class="d-inline-block align-text-middle me-2">
-      <span class="fs-4">Ryan Hsu</span>
-    </a>
+  <body>
+    <header data-bs-theme="light" class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 
-    <ul class="nav nav-pills ms-4 align-items-center">
-      <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="./Ohlone College Class 139A.html" class="nav-link">Ohlone College Class 139A</a></li>
-      <li class="nav-item"><a href="./resume.html" class="nav-link active">CV</a></li>
-    </ul>
-  </header>
+      <a href="./index.html"
+        class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Logo" width="40"
+          class="d-inline-block align-text-middle me-2">
+        <span class="fs-4">Ryan Hsu</span>
+      </a>
 
-  <div class="container">
-    <div class="mb-5">
-      <a href="./Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Cover Letter</a><br />
-      <a href="./Hsu_letter_of_recommendation.jpg" target="_blank">Letter of Recommendation one</a><br />
-      <!--a href="./Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp" target="_blank">Letter of Recommendation two</a><br />
-      <a href="./Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp" target="_blank">Letter of Recommendation three </a><br /-->
-      <!--a href="./Artistic_Statement_may_5_23_test_.jpg" target="_blank">Artistic Statement PDF</a><br /-->
-      <a href="./HSU__job_applcation_may_4_23_copy.jpg" target="_blank">Job Application</a><br />
-      <!--a href="./CV_copy_4_.jpg" target="_blank">Resume / CV PDF</a><br /-->
-      <!--a href="./Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Resume / CV References PDF</a><br /-->
-      <!-- <a href="./Hsu_model_release_form_one_pg_5_7_23.jpg" target="_blank">Model Releases</a><br /> -->
-    </div>
+      <ul class="nav nav-pills ms-4 align-items-center">
+        <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="./OhloneCollegeClass139A.html" class="nav-link">Ohlone College Course Art-139A</a>
+        </li>
+        <li class="nav-item"><a href="./PD-150-05.html" class="nav-link "> Ohlone College course PD-150</a></li>
 
- 
+        <li class="nav-item"><a href="./resume.html" class="nav-link active">CV & resume </a></li>
 
 
-    <h1 class="mb-3">Artist's Bio & Artistic Statement </h1>
+      </ul>
+    </header>
 
-    <div class="text-left">
-      <p>
-        Art is a form of expression of creativity for the human mind. Lines, shapes, and colors are forms of art
-        that could move the person's eye in a picture through any piece of work. As in paintings giving full of
-        color to a canvas as to Camera to Image. My inspiration comes from industrial design, the sound of music,
-        and my thoughts. Every noun is an idea for creativity and mystery in today's world.
-      </p>
-      <p>
-        Fakurian, M. (2021, April 7). Photo by Milad Fakurian on unsplash. Beautiful Free Images &
-        Pictures, Retneved May. 2124. from hitos/unsolash.com/photos/daan-rzbw<br />
-        Fakurian, M. (2021, Apnl 7). Photo by Milad Fakunen on unsplash. Beautful Free Images &
-        Pictures. RetnavedNav.2126.fromnitos:/unsolash.com/ohotos/idaoFrzw<br />
-        Faxurian, M. (2021, April 9). Photo by /esd Facunan on unspash. Beautiful tree images à
-        Pictures. Retneyed Nav3, 2023. from nitos/uns-sn.cm/nto/cor...<br />
-      </p>
-      <p>
-        My work won't stop here. It is the beginning of a new chaper. Barriers are meant to be broken. So let's
-        destroy barriers and redefine what possible.
-      </p>
-      <p>
-        My future plan is to explore color and the effects it has human mind to make art forms.
-      </p>
-    </div>
+    <div class="container">
+      <div class="mb-5">
 
 
-    <h1 class="mb-4 mt-5">Resume & CV</h1>
+        <a href="CV pictures pagee/Artistic_Statement_may_5_23_test_.jpg" target="_blank">Artistic Statement</a><br />
 
-    <h2>Goal</h2>
-    <p>
-      My current plan right now is to go to Ohlone College (Fall 2023) to get a Design Certificate followed
-      by a Computer-Aided Design program.
-    </p>
+        <a href="CV pictures pagee/Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Cover Letter</a><br />
+        <!-- <a href="./Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Cover Letter</a><br /> -->
 
-    <h2>Education</h2>
-    
-      <!-- <div class="text-left">
+        <a href="CV pictures pagee/Hsu_letter_of_recommendation.jpg " target="_blank">Letter of Recommendation
+          one</a><br />
+        <!-- <a href="CV pictures pagee/Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp"
+          target="_blank"> Letter of
+          Recommendation two</a><br /> -->
+        <a href="CV pictures pagee/Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Job Application</a><br />
+
+        <a href="CV pictures pagee/Resume _July_28_ 24 (1).jpg" target="_blank">Resume with CV References
+          PDF (last
+          update July 28 2024)</a><br />
+        <a href="CV pictures pagee/Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Resume & CV
+          References page PDF</a><br />
+        <!-- <a href="CV pictures pagee/Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Model
+          Releases</a><br /> -->
+
+
+
+
+
+        <!-- 
+        <a href="./Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Cover Letter</a><br />
+        <a href="./Hsu_letter_of_recommendation.jpg" target="_blank">Letter of Recommendation one</a><br />
+        <a> href="."
+
+
+        </a>href="./Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp" target="_blank">Letter of
+        Recommendation two</a><br />
+        <a href="./Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp" target="_blank">Letter of
+          Recommendation three </a><br href="./Artistic_Statement_may_5_23_test_.jpg" target="_blank">Artistic Statement
+        PDF</a><br href="./HSU__job_applcation_may_4_23_copy.jpg" target="_blank">Job Application</a><br />
+
+
+        a href="./CV_copy_4_.jpg" target="_blank">Resume / CV PDF</a><br a
+          href="./Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Resume / CV References PDF</a><br <a
+          href=target="_blank">Model Releases</a><br </div> -->
+
+
+      </div>
+      <div class="mb-5">
+
+
+        <h1 class="mb-3">Artist's Bio & Artistic Statement </h1>
+
+        <div class="text-left">
+          <p>
+            Art is a form of expression of creativity for the human mind. Lines, shapes, and colors are forms of art
+            that could move the person's eye in a picture through any piece of work. As in paintings giving full of
+            color to a canvas as to Camera to Image. My inspiration comes from industrial design, the sound of music,
+            and my thoughts. Every noun is an idea for creativity and mystery in today's world.
+          </p>
+          <p>
+            Fakurian, M. (2021, April 7). Photo by Milad Fakurian on unsplash. Beautiful Free Images &
+            Pictures, Retneved May. 2124. from hitos/unsolash.com/photos/daan-rzbw<br />
+            Fakurian, M. (2021, Apnl 7). Photo by Milad Fakunen on unsplash. Beautful Free Images &
+            Pictures. RetnavedNav.2126.fromnitos:/unsolash.com/ohotos/idaoFrzw<br />
+            Faxurian, M. (2021, April 9). Photo by /esd Facunan on unspash. Beautiful tree images à
+            Pictures. Retneyed Nav3, 2023. from nitos/uns-sn.cm/nto/cor...<br />
+          </p>
+          <p>
+            My work won't stop here. It is the beginning of a new chaper. Barriers are meant to be broken. So let's
+            destroy barriers and redefine what possible.
+          </p>
+          <p>
+            My future plan is to explore color and the effects it has human mind to make art forms.
+          </p>
+        </div>
+
+
+        <h1 class="mb-4 mt-5">Resume & CV</h1>
+        <!-- 
+        <h2>Goal</h2>
+        <p>
+          My current plan right now is to go to Ohlone College (Fall 2023) to get a Design Certificate followed
+          by a Computer-Aided Design program.
+        </p> -->
+
+        <h2>Education</h2>
+
+        <!-- <div class="text-left">
         <div class="row mt-4">
           <div class="col-8">
             <h5>Ohlone College:(43600 Mission Boulevard, Fremont, CA)</h5>
@@ -181,7 +221,7 @@
         <div class="text-left">
           <div class="row mt-4">
             <div class="col-8">
-              <h5>American High School: (36300 Fremont Blvd, Fremont, CA) </h5>
+              <h5>American High School </h5>
             </div>
             <div class="col-2"></div>
             <div class="col-2"></div>
@@ -190,18 +230,22 @@
             <div class="col-8">Class of 2023. Receive diploma 8/2/23</div>
             <div class="col-2">8/2/2023</div>
           </div>
-    
-          
+
+
 
           <div class="text-left">
             <div class="row mt-4">
               <div class="col-8">
-                <h5>Ohlone College Dual Enrollment: (43600 Mission Boulevard, Fremont, CA)</h5>
+                <h5>Ohlone College </h5>
+
+
               </div>
-              <div class="col-2"></div>
-              <div class="col-2"></div>
+              <div class="col-8"> looking into major in Graphic Design or Hospitality and Tourism</div>
+              <div class="col-2">8/26/2020</div>
+              <div class="col-2">Present</div>
+
             </div>
-            <div class="row">
+            <!--  <div class="row">
               <div class="col-8">Art 139A: Digital 1 Photo </div>
               <div class="col-2">8/18/2022</div>
               <div class="col-2">8/2/2023</div>
@@ -232,112 +276,154 @@
               <div class="col-8">Making different types of art forms to make artwork.</div>
               <div class="col-2"></div>
               <div class="col-2"></div>
+            </div> 
+          </div> -->
+
+            <h2 class="mt-4">Work Experience</h2>
+
+            <div class="text-left">
+              <div class="row">
+                <div class="col-8">
+                  <h5>American High School </h5>
+                </div>
+                <div class="col-2">8/18/2020</div>
+                <div class="col-2">8/2/2023</div>
+              </div>
+              <div class="row">
+                <div class="col-8">Helped students in class, ran errands for teachers.</div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+            <h2 class="mt-4">Volunteering</h2>
+
+            <div class="text-left">
+              <div class="row">
+                <div class="col-8">
+                  <h5>Ohlone College Newark Campus: Outdoor Urban Farm Lab </h5>
+                  <!-- <h4> Outdoor Urban Farm Lab </h4> -->
+                </div>
+                <div class="col-2">6/17/2024</div>
+                <div class="col-2">7/15/2024</div>
+              </div>
+              <div class="row">
+                <div class="col-8">I worked at a butterfly garden and did a variety of tasks, such as pulling weeds and
+                  cutting overgrown plants. I support the environment to help allow for more butterflies next season. .
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+
+            <h2 class="mt-4">Certificate </h2>
+
+            <div class="text-left">
+              <div class="row">
+                <div class="col-8">
+                  <h5> Mission Valley Regional Occupational Program </h5>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-8"> Cretificate of Achievent and Complaton Digital Photography 1 .</div>
+                <div class="col-2">5/9/2023</div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./CV pictures pagee/Hsu_rop achievemet certificate 5_9_23 .jpg "
+                alt="Hsu_rop achievemet certificate image" width="250">
             </div>
           </div>
 
-          <h2 class="mt-4">Work Experience</h2>
+
+
+
+          <!-- <h2 class="mt-4">Awards</h2> -->
+
+
+
+
+
+
+          <h2 class="mt-4">Project</h2>
+
+
+          <h5>Adobe Illustrator</h5>
+
+          <p>
+            Card ideas<br />
+            Square collection<br />
+            Project THANK YOU Cards<br />
+          </p>
+
+          <h5>Adobe Photoshop</h5>
+          <p>Montage based nature<br />
+            Business Cards files<br />
+            poster<br />
+
+          </p>
+
+          <h4>Publications</h4>
 
           <div class="text-left">
             <div class="row">
               <div class="col-8">
-                <h5>American High School: (36300 Fremont Blvd, Fremont, CA)</h5>
-              </div>
-              <div class="col-2">8/18/2020</div>
-              <div class="col-2">8/2/2023</div>
-            </div>
-            <div class="row">
-              <div class="col-8"> Help other students that need help,running errands for teachers. Being on
-                standby for
-                anything you may need help
-                with anything in the class.</div>
-              <div class="col-2"></div>
-              <div class="col-2"></div>
-            </div>
-          </div>
-
-          <h2 class="mt-4">Certificate </h2>
-
-          <div class="text-left">
-            <div class="row">
-              <div class="col-8">
-                <h5> Mission Valley Regional Occupational Program (5019 Stevenson Blvd, Fremont, CA 94538) </h5>
+                <h5> Project Earth Day & Grey Water </h5>
               </div>
               <div class="col-2"></div>
               <div class="col-2"></div>
             </div>
 
             <div class="row">
-              <div class="col-8"> Cretificate of Achievent and Complaton Digital Photography 1 .</div>
-              <div class="col-2">5/9/2023</div>
+              <div class="col-8"> Earth Day Participation Award Certificate.</div>
+              <div class="col-2">5/4/2023</div>
               <div class="col-2"></div>
             </div>
+            <div class="col">
+              <img src="./pictues_2/Ryan_HsuEarth_Day_Participation_Award_Certificate_may_4_23_ copy.jpg (1).jpg "
+                alt="Earth Day Participation Award Certificate image" width="250">
+            </div>
           </div>
-          <div class="col">
-            <img src="./Hsu_rop achievemet certificate 5_9_23 .jpg" alt="certificate_1" width="250">
-          </div>
+
         </div>
 
 
 
 
-
-
-        <h2 class="mt-4">Awards</h2>
-
-
-
-
-
-
-        <h2 class="mt-4">Project</h2>
-    
-
-        <h5>Adobe Illustrator</h5>
+        <h2 class=" mt-4">Computer Skills</h2>
 
         <p>
-          Card ideas<br />
-          Square collection<br />
-          Project THANK YOU Cards<br />
-        </p>
-
-        <h5>Adobe Photoshop</h5>
-        <p>Montage based nature<br />
-          Business Cards files<br />
-          poster<br />
-
-        </p>
-
-        <h5>Publications</h5>
-        <p>
-          Project Earth Day & Grey Water Project: Earth Day Competition 2023<br />
-   
-        </p>
-
-        <h2 class="mt-4">Computer Skills</h2>
-
-        <p>
-          Adobe Photoshop (23.1.1)<br />
-          Lightroom Classic (12.1)<br />
-          Adobe Illustrator (27.7)<br />
+          Adobe Photoshop<br />
+          Lightroom Classic<br />
+          Adobe Illustrator<br />
           Google Workspace<br />
-          Procreate (5.3.1)<br />
+          Procreate<br />
           Visual Studio Code <br />
           Apple Keynote/Pages<br />
-          Acrobot<br />
-          Lightroom (6.2)<br />
-          premiere Rush (2.7)<br />
+          Acrobot Pro<br />
+          Lightroom<br />
+          premiere Rush<br />
         </p>
 
-        <h2 class="mt-4">Languages</h2>
+        <!-- Adobe premiere Rush <br /> -->
+
+
+        </p>
+
+        <!-- <h2 class="mt-4">Languages</h2>
 
         <p>
           Chinese Mandarin: (Conversational)<br />
           Plan to learn Japanese in the future
-        </p>
+        </p> -->
 
         <h2 class="mt-4">References</h2>
         <p>
-          Mr. Thomas Bartholomew-Couts, Photography Instructor, American High School, 36300 Fremont Blvd,
+          Mr. Thomas Bartholomew-Couts: Photography Instructor, American High School, 36300 Fremont Blvd,
           Fremont, CA. 95436
           Phone: 510-796-17876 ext. 57711 Tcouts@fusdk12.net<br />
           Ms. Ahmed: Education Specialist, American High School, 36300 Fremont Blvd, Fremont, CA, 94536:
@@ -347,7 +433,7 @@
           510-796-1776 ex 57200:
           Tsorensen@fusdk12.net<br />
 
-        <!-- <section class="py-5 text-left ">
+          <!-- <section class="py-5 text-left ">
           <h1 class="fw-light">Contact </h1>
           <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
@@ -367,36 +453,40 @@
               <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
             </svg><br /> 
              -->
-            Email:ryanhsu999@gmail.com<br />
-            <a href="https://github.com/ryanhsu999">Visit ryanhsu999 page Github <br />
-           <a href="https://profile.indeed.com/"> Visit ryanhsu999 page Indeed <br />
-           <a href="https://www.linkedin.com/in/ryan-hsu-887185236/"> Visit ryanhsu999 page linkedin  <br />
-          </p>
-          <p>
-        
-              
-          </p>
-            <p>
 
-        </section>
+
+        <h2 class="mt-4">Connect With Me</h2>
+
+        <p>
+          <br> Email:ryanhsu999@gmail.com<br />
+          <a href="https://github.com/ryanhsu999">Visit Github page <br />
+            <!-- <a href="https://profile.indeed.com/"> Visit  Indeed <br /> -->
+            <a href="https://www.linkedin.com/in/ryan-hsu-887185236/"> Visit linkedin page <br />
+        </p>
+
+
+
+        <footer class="text-body-secondary py-5">
+          <div class="container">
+            <p class="float-end mb-1">
+              <a href="#">Back to top</a>
+            </p>
+
+            <p class="mb-1"> Ryan Hsu ©2022-2024 All right reserved </p>
+            <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
+            <p class="mb-1"> Version 2.0.0 Starlight </p>
+
+
+          </div>
+        </footer>
+
+
+
+
       </div>
-    </div>
-  </div>
-  </div>
+      </footer>
 
-  <footer class="text-body-secondary py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Back to top</a>
-      </p>
-      <p class="mb-1"> Ryan Hsu ©2022-2023 All right reserved </p>
-      <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
-      <p class="mb-1"> Version 1.0.1 Ocean </p>
-
-    </div>
-  </footer>
-
-  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>

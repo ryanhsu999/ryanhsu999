@@ -1,0 +1,514 @@
+<!-- 
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+
+
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="5000%" height="5000%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="5000%" height="5000%" fill="var(--bs-secondary-color)"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>test 1.1</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="200%" height="200%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="ture">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>test 1.2</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+
+<hr class="featurette-divider">
+<!-- 
+
+    <section class="py-5 text-center container">
+      <h1 class="fw-light"> Connect with me </h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+      </svg>
+      <a href="https://github.com/ryanhsu999" a> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+          fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+        </svg>
+        <a href=" https://www.linkedin.com/in/ryan-hsu-887185236/" a> <svg xmlns="http://www.w3.org/2000/svg" width="50"
+            height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+          </svg>
+    </section> -->
+<!-- 
+
+    <section class="py-5 text-center container">
+      <h1 class="fw-light"> how I designs PD-150 page used html UI/UX - How it was made
+      </h1>
+
+      <br />
+    
+    </section> -->
+
+<!-- <div class="row row-cols-1 g-3 mt-4">
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+              Table of contents & Terms
+            </h5>
+            <h6>UX/UI:User interface design/ user interface engineering designing interfaces for all Devices.</h6>
+            <h6>HTML (HyperText Markup Language) is ordinary markup language for web-based documents</h6>
+            <h6>VS Code (Visual Studio Code) contribute debugging, syntax highlighting, intelligent code
+              completion,
+              snippets, and Git incorporation.</h6>
+            <h6>Github: A website for hosting projects and development version control useing Git.</h6>
+            <h6>Git is a free open source version control system.</h6>
+            <h6>Github repository: record keeping for projects.</h6>
+            <h6>Get bootstrap: HTML support website with code and examples of a webpage UX/UI</h6>
+
+            <h5 class="card-title">
+              Table of contents & Terms pacific only to this page
+            </h5>
+            <h6> PD: Personal Development:
+              <a href="https://www.ohlone.edu/personaldev">Visit Ohlone Chollge Personal Development page to
+                lean more
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 g-3 mt-4">
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Digital 1 Photography html UI/UX - How it was made</h5>
+            <h6>
+
+            </h6>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </h6>
+
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </h6>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row row-cols-1 g-3 mt-4">
+
+      <div class="col">
+        <div class="card shadow-sm">
+        <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
+<!-- <div class="card-body">
+      <h5 class="card-title">Thank you</h5>
+      <h6>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+        <h6>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </h6>
+        <h6>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+        </h6>
+        <h6>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </h6>
+        <h6>
+          Thank you again for visiting my website.
+        </h6>
+        <h6>
+          If you are interested in viewing the source code for this page host on Github you can
+          <a href="https://github.com/ryanhsu999/ryanhsu999">Visit Github repository under PD-150-05.html
+            (update will happen with
+            future projects)
+        </h6>
+    </div> -->
+<div <!-- <di <div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll
+        blow your mind.</span></h2>
+    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
+      here.
+    </p>
+  </div>
+  <div class="col-md-5">
+    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250" height="250"
+      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+      preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+    </svg>
+  </div>
+</div>
+
+
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See
+        for
+        yourself.</span></h2>
+    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+      layout would work with some actual real-world content in place.</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+      preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+    </svg>
+  </div>
+</div>
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+        class="text-body-secondary">Checkmate.</span></h2>
+    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+      intended to be actually read, simply here to give you a better view of what this would look like with some
+      actual content. Your content.</p>
+  </div>
+  <div class="col-md-5">
+    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+      xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+      preserveAspectRatio="xMidYMid slice" focusable="false">
+      <title>Placeholder</title>
+      <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+        fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+    </svg>
+  </div>
+</div>
+
+
+
+
+
+<a href="./Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Cover Letter</a><br />
+<a href="./Hsu_letter_of_recommendation.jpg" target="_blank">Letter of Recommendation one</a><br />
+<a href="./Ryan Hsu_ Letter of recommendation 2023 w: AHS Letterhead_ (1).docx .webp" target="_blank"> Letter of
+  Recommendation Two</a><br />
+<a href="./Hsu_Cover_letter_5_7_23_.jpg" target="_blank">Job Application</a><br />
+<a href="./pictues_2/Resume downlonad July 17 24 .pdf" target="_blank">Resume with CV References PDF (last
+  update July 17 2024)</a><br />
+<a href="./Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Resume & CV References page
+  PDF</a><br />
+<a href="./Hsu__reumse_CV_References_3_5_2_23_PS_JPEG_.jpg" target="_blank">Model Releases</a><br />
+
+
+
+
+<section class="py-5 text-center container">
+  <h1 class="fw-light"> </h1>
+  <h4>Course: PD-150 Career and Life Planning Portfolio </h4>
+  <h4> Ohlone College</h4>
+  <h5> 6/24/2024 - 8/1/2024</h5>
+
+</section>
+
+
+<div class="text-left">
+  <div class="row mt-4">
+    <div class="col-8">
+      <h5>Ohlone College </h5>
+
+
+      <section class="text-left"">
+    <h1 class=" fw-light">introduction</h1>
+
+        This Portfolio was the Final assignment for this Course: PD-150 Career and Life Planning
+        <br />
+      </section>
+
+
+      <hr class="featurette-divider">
+
+      <section class="py-5 text-center container">
+        <h1 class="fw-light"> quantitive achievements </h1>
+
+        <br />
+      </section>
+      <!-- 
+
+<div class="row featurette">
+<div class="col-md-7">
+<h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll
+    blow your mind.</span></h2>
+<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+</p>
+</div>
+<div class="col-md-5">
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="250"
+  height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+  preserveAspectRatio="xMidYMid slice" focusable="false">
+  <title>Placeholder</title>
+  <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+    fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+</svg>
+</div>
+</div>
+
+
+
+<div class="row featurette">
+<div class="col-md-7 order-md-2">
+<h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for
+    yourself.</span></h2>
+<p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
+  layout would work with some actual real-world content in place.</p>
+</div>
+<div class="col-md-5 order-md-1">
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+  height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+  preserveAspectRatio="xMidYMid slice" focusable="false">
+  <title>Placeholder</title>
+  <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+    fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+</svg>
+</div>
+</div>
+
+<div class="row featurette">
+<div class="col-md-7">
+<h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
+    class="text-body-secondary">Checkmate.</span></h2>
+<p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
+  intended to be actually read, simply here to give you a better view of what this would look like with some
+  actual content. Your content.</p>
+</div>
+<div class="col-md-5">
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+  height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+  preserveAspectRatio="xMidYMid slice" focusable="false">
+  <title>Placeholder</title>
+  <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+    fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+</svg>
+</div>
+</div>
+
+-->
+
+
+
+      <hr class="featurette-divider">
+
+      <section class="py-5 text-center container">
+        <h1 class="fw-light"> testimonies from others individuals </h1>
+
+        <br />
+      </section>
+
+
+
+      <!-- 
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+  aria-current="true"></button>
+<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+
+
+<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+  <svg class="bd-placeholder-img" width="5000%" height="5000%" xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <rect width="5000%" height="5000%" fill="var(--bs-secondary-color)"></rect>
+  </svg>
+  <div class="container">
+    <div class="carousel-caption text-start">
+      <h1>test 1.1</h1>
+      <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+    </div>
+  </div>
+</div>
+<div class="carousel-item">
+  <svg class="bd-placeholder-img" width="200%" height="200%" xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="ture">
+    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+  </svg>
+  <div class="container">
+    <div class="carousel-caption text-start">
+      <h1>test 1.2</h1>
+      <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div> -->
+
+
+      <hr class="featurette-divider">
+      <!-- 
+
+<section class="py-5 text-center container">
+<h1 class="fw-light"> Connect with me </h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope"
+viewBox="0 0 16 16">
+<path
+  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+</svg>
+<a href="https://github.com/ryanhsu999" a> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path
+    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+</svg>
+<a href=" https://www.linkedin.com/in/ryan-hsu-887185236/" a> <svg xmlns="http://www.w3.org/2000/svg" width="50"
+    height="50" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+    <path
+      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+  </svg>
+</section> -->
+      <!-- 
+
+<section class="py-5 text-center container">
+<h1 class="fw-light"> how I designs PD-150 page used html UI/UX - How it was made
+</h1>
+
+<br />
+
+</section> -->
+
+      <!-- <div class="row row-cols-1 g-3 mt-4">
+
+<div class="col">
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">
+      Table of contents & Terms
+    </h5>
+    <h6>UX/UI:User interface design/ user interface engineering designing interfaces for all Devices.</h6>
+    <h6>HTML (HyperText Markup Language) is ordinary markup language for web-based documents</h6>
+    <h6>VS Code (Visual Studio Code) contribute debugging, syntax highlighting, intelligent code
+      completion,
+      snippets, and Git incorporation.</h6>
+    <h6>Github: A website for hosting projects and development version control useing Git.</h6>
+    <h6>Git is a free open source version control system.</h6>
+    <h6>Github repository: record keeping for projects.</h6>
+    <h6>Get bootstrap: HTML support website with code and examples of a webpage UX/UI</h6>
+
+    <h5 class="card-title">
+      Table of contents & Terms pacific only to this page
+    </h5>
+    <h6> PD: Personal Development:
+      <a href="https://www.ohlone.edu/personaldev">Visit Ohlone Chollge Personal Development page to
+        lean more
+    </h6>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row row-cols-1 g-3 mt-4">
+
+<div class="col">
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h5 class="card-title">Digital 1 Photography html UI/UX - How it was made</h5>
+    <h6>
+
+    </h6>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+    <h6>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    </h6>
+
+    <h6>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    </h6>
+    <h6>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    </h6>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="row row-cols-1 g-3 mt-4">
+
+<div class="col">
+<div class="card shadow-sm">
+<img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
+      <!-- <div class="card-body">
+<h5 class="card-title">Thank you</h5>
+<h6>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+<h6>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+</h6>
+<h6>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+
+</h6>
+<h6>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+</h6>
+<h6>
+  Thank you again for visiting my website.
+</h6>
+<h6>
+  If you are interested in viewing the source code for this page host on Github you can
+  <a href="https://github.com/ryanhsu999/ryanhsu999">Visit Github repository under PD-150-05.html
+    (update will happen with
+    future projects)
+</h6>
+</div> -->
