@@ -6,54 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Ryan Hsu">
-    <title>Ryan Hsu</title>
-
+    <title>Other Projects</title>
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
       body {
         font-family: "Helvetica", "Arial", sans-serif;
         margin: 0;
@@ -61,11 +17,45 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        color: #000000;
+        color: #000;
+      }
 
+      .image-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
 
+      .image-row img {
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        max-width: 100%;
+        height: auto;
+      }
 
+      .featurette-divider {
+        margin: 3rem 0;
+      }
 
+      .btn-outline-primary,
+      .btn-outline-secondary {
+        min-width: 320px;
+        text-align: left;
+      }
+
+      @media (max-width: 600px) {
+        .image-row {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn-outline-primary,
+        .btn-outline-secondary {
+          min-width: 0;
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -78,72 +68,149 @@
           class="d-inline-block align-text-middle me-2">
         <span class="fs-4">Ryan Hsu</span>
       </a>
-
-      <ul class="nav nav-pills ms-4 align-items-center">
-        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="./OhloneCollegeClass139A.html" class="nav-link">Ohlone College Class Art-139A</a>
-        </li>
-        <li class="nav-item"><a href="./PD-150-05.html" class="nav-link">Ohlone College Course PD-150</a></li>
-        <li class="nav-item"><a href="./other.Project.html" class="nav-link active">Other Projects</a></li>
-        <li class="nav-item"><a href="./resume.html" class="nav-link">Resume</a></li>
-      </ul>
+      <nav class="ms-4">
+        <ul class="nav nav-pills align-items-center gap-2">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="OhloneCollegeClass139A.html" class="nav-link">
+              <i class="bi bi-camera-fill me-1"></i> Art-139A
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="PD-150-05.html" class="nav-link">
+              <i class="bi bi-journal-text me-1"></i> PD-150
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="SSBA.html" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-1"
+                viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1" fill="none" />
+                <rect x="4" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="7.5" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="11" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="4" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="7.5" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="11" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="4" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="7.5" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+                <rect x="11" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+              </svg>
+              Semiconductor Skills Bridge Academy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="other.Project.html" class="nav-link active" aria-current="page">
+              <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resume.html" class="nav-link">
+              <i class="bi bi-file-earmark-person me-1"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="container">
-      <section class="py-5 text-center">
-        <h2>Other Projects Page!</h2>
-        <h5>This page is where all other works will be located if they don’t have a designated page.</h5>
-        <h5>9/27/24 - Present</h5>
-
-
+      <section class="py-5 text-center bg-light rounded-4 shadow-sm mb-5">
+        <h2 class="fw-bold mb-3">
+          <i class="bi bi-lightbulb-fill me-2 text-warning"></i>Other Projects
+        </h2>
+        <p class="lead mb-2">
+          Explore a collection of my creative and academic works that don’t have a dedicated page.
+        </p>
+        <span class="badge bg-primary fs-6 py-2 px-4 mt-3">
+          <i class="bi bi-calendar-event me-1"></i> 9/27/24 - Present
+        </span>
       </section>
 
       <hr class="featurette-divider">
 
-      <section class="py-5 text-right">
-        <h2>Ohlone College course: ETHN-100-01: Introduction to Ethnic Studies.
-
-          <h2>
-            <h5>Banned Book Project: Ban Voyage Volume 1 (Fall 2024) - Jay Chou Struggle Studies</h5>
-            <h6>9/27/2024 to 12/12/2024</h6>
-            </h4>
-            <p>
-              Each student in the course had the unique opportunity to develop a children's story that might face
-              challenges
-              or
-              even bans in schools and libraries due to its themes.</p>
-            <p>I am deeply grateful to the Ethnic Studies department, and The Lytton Center for the Public Good for fund
-              the
-              project.
-
-            </p>
-            Lastly I would like to thank Ohlone college Faculty and staff: Dr. August Samie, and Public Services
-            Librarian:
-            Nnekay FitzClarke for
-            their generous support in bringing this project to life.
-            <p>
-              A copy of everyone’s stories is proudly available for public viewing at the Ohlone Fremont Library
-            </p>
-
-            <p>
-              if you want to lean more adout Ban Voyage please visit <a
-                href="https://www.ohlone.edu/ethnic">Ohlone.edu/ethic</a>
-            </p>
-
-            <div class="image-row" style="display: flex; gap: 10px;">
-              <img src="CV pictures pagee/Ban Voyage cover V1.jpg" alt="Ban Voyage Cover Version 1 Fall 2024"
-                width="250">
-              <img src="./CV pictures pagee/1_Title_Jay_Chou_Struggles.jpg"
-                alt="Jay Chou Struggles title page, page one" width="250">
+      <section class="py-5">
+        <div class="row align-items-center flex-lg-row flex-column-reverse">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">
+              Ohlone College Course: <span class="text-primary">ETHN-100-01: Introduction to Ethnic Studies</span>
+            </h3>
+            <h5 class="mb-3">
+              Banned Book Project: <span class="text-secondary">Ban Voyage Vol. 1 (Fall 2024) – Jay Chou Struggle
+                Studies</span>
+            </h5>
+            <h6 class="text-muted mb-4">
+              <i class="bi bi-calendar-event me-1"></i> 9/27/2024 – 12/12/2024
+            </h6>
+            <ul class="list-unstyled mb-4 ps-2">
+              <li class="mb-2">
+                <i class="bi bi-book me-2 text-primary"></i>
+                Created a children’s story exploring themes that may face challenges or bans in schools and libraries.
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-people me-2 text-primary"></i>
+                Grateful to Ohlone College Ethnic Studies, The Lytton Center for the Public Good, and CCC Chancellor’s
+                Office Ethnic Studies for funding.
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-person-hearts me-2 text-primary"></i>
+                Special thanks to Dr. August Samie and Librarian Nnekay FitzClarke for their generous support.
+              </li>
+              <li>
+                <i class="bi bi-archive me-2 text-primary"></i>
+                Stories are available for public viewing at the Ohlone Fremont Library.
+              </li>
+            </ul>
+            <h4 class="mb-3">Learn more about Ban Voyage</h4>
+            <div class="d-flex flex-column align-items-start gap-2">
+              <a class="btn btn-outline-primary shadow-sm"
+                href="https://www.ohlone.edu/article/news/ohlone-college-unveils-ban-voyage-ohlone-college-banned-book-project-inaugural"
+                target="_blank" rel="noopener">
+                <i class="bi bi-journal-bookmark me-2"></i>
+                Ohlone College Unveils Ban Voyage: Inaugural Children's Book
+              </a>
+              <a class="btn btn-outline-secondary shadow-sm"
+                href="https://www.ohlone.edu/sites/default/files/groups/Lytton_Center_Group/ban_voyage_grant_report.pdf"
+                target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-pdf me-2"></i>
+                Ban Voyage: Grant Report (PDF)
+              </a>
             </div>
+          </div>
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="image-row">
+              <figure class="text-center">
+                <img src="CV pictures pagee/Ban Voyage cover V1.jpg" alt="Ban Voyage Cover Version 1 Fall 2024"
+                  width="220" class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Ban Voyage Cover</figcaption>
+              </figure>
+              <figure class="text-center">
+                <img src="./CV pictures pagee/1_Title_Jay_Chou_Struggles.jpg"
+                  alt="Ban Voyage Version 1 Fall 2024 Jay Chou Struggles title page, page one" width="220"
+                  class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Jay Chou Struggles – Title Page</figcaption>
+              </figure>
+              <figure class="text-center">
+                <img src="./other pictures/me reading book Photo Dec 09 2024, 11 25 29 AM.jpg"
+                  alt="Ryan reading Jay Chou Struggles in the Ohlone College Fremont Library" width="220"
+                  class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Reading at Ohlone Library</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <hr class="featurette-divider">
 
-
-      <section class="py-5 text-right">
-        <h1>You are up to date with my project</h1>
-        <h5>Come back soon</h5>
-        <h6>Date to be determined</h6>
+      <section class="py-5 text-center">
+        <h3 class="fw-bold mb-2"><i class="bi bi-emoji-smile me-2 text-success"></i>You are up to date with my projects!
+        </h3>
+        <h5 class="mb-2">Check back soon for more updates.</h5>
+        <span class="badge bg-secondary fs-6 py-2 px-4 mt-2">Next update: Date to be determined</span>
       </section>
     </main>
 
@@ -156,7 +223,6 @@
         <p class="mb-0">Every day we make decisions and use tools to empower others.</p>
       </div>
     </footer>
-
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Semiconductor Icon</title>
+    <style>
+      body {
+        background: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+      }
+
+      .semiconductor-icon {
+        width: 200px;
+        height: 200px;
+        background: white;
+        border-radius: 50%;
+        border: 5px solid #cc0000;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Grid lines - vertical */
+      .semiconductor-icon::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(to right,
+            #999 0px,
+            #999 1px,
+            transparent 1px,
+            transparent 20px);
+      }
+
+      /* Grid lines - horizontal */
+      .semiconductor-icon::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(to bottom,
+            #999 0px,
+            #999 1px,
+            transparent 1px,
+            transparent 20px);
+      }
+
+      .icon-label {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #cc0000;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="semiconductor-icon"></div>
+    <div class="icon-label">Semicon</div>
+
+  </body>
+
+
+
+
+  <li class="nav-item">
+    <a href="SSBA.html" class="nav-link"> semiconductor">
+      <a href="#" class="nav-link" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+
+        <!-- Icon -->
+        <div
+          style="width: 32px; height: 32px; background: white; border-radius: 50%; border: 2px solid #cc0000; position: relative; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.2); flex-shrink: 0;">
+          <div
+            style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to right, #999 0px, #999 1px, transparent 1px, transparent 6px);">
+          </div>
+          <div
+            style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to bottom, #999 0px, #999 1px, transparent 1px, transparent 6px);">
+          </div>
+        </div>
+
+      </a>
+  </li>
+
+  <li class="nav-item">
+    <a href="SSBA.html" class="nav-link"
+      style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+
+      <!-- SVG Grid Chip Icon
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-1"
+        viewBox="0 0 16 16">
+        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1" fill="none" />
+        <rect x="4" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="7.5" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="11" y="4" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="4" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="7.5" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="11" y="7.5" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="4" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="7.5" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+        <rect x="11" y="11" width="1" height="1" stroke="currentColor" stroke-width="0.7" fill="none" />
+      </svg> -->
+
+      <!-- Wafer-Style Circle Icon -->
+      <div
+        style="width: 20px; height: 20px; background: white; border-radius: 50%; border: 2px solid #cc0000; position: relative; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.15); flex-shrink: 0;">
+        <div
+          style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to right, #999 0px, #999 1px, transparent 1px, transparent 4px);">
+        </div>
+        <div
+          style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to bottom, #999 0px, #999 1px, transparent 1px, transparent 4px);">
+        </div>
+      </div>
+
+      <!-- Label -->
+      <span style="font-weight: bold;">Semiconductor</span>
+    </a>
+  </li>
+
+
+  <li class="nav-item">
+    <a href="SSBA.html" class="nav-link"
+      style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit;">
+
+      <!-- SVG Chip Icon (fewer, now color-coded) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="me-1" viewBox="0 0 16 16">
+        <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1" fill="none" />
+        <!-- Color-coded squares -->
+        <rect x="5" y="5" width="1" height="1" fill="#FF6B6B" stroke="#333" stroke-width="0.3" />
+        <rect x="10" y="5" width="1" height="1" fill="#4D96FF" stroke="#333" stroke-width="0.3" />
+        <rect x="7.5" y="7.5" width="1" height="1" fill="#FFD93D" stroke="#333" stroke-width="0.3" />
+        <rect x="5" y="10" width="1" height="1" fill="#6BCB77" stroke="#333" stroke-width="0.3" />
+        <rect x="10" y="10" width="1" height="1" fill="#C56CF0" stroke="#333" stroke-width="0.3" />
+      </svg>
+
+      <!-- Simplified Wafer Circle (optional: add background grid or remove) -->
+      <div
+        style="width: 20px; height: 20px; background: white; border-radius: 50%; border: 2px solid #cc0000; position: relative; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.15); flex-shrink: 0;">
+        <div
+          style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to right, #999 0px, #999 1px, transparent 1px, transparent 8px);">
+        </div>
+        <div
+          style="position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(to bottom, #999 0px, #999 1px, transparent 1px, transparent 8px);">
+        </div>
+
+        <!-- Color-coded blocks inside wafer -->
+        <div
+          style="position: absolute; top: 4px; left: 4px; width: 4px; height: 4px; background: #FF6B6B; border: 1px solid #444;">
+        </div>
+        <div
+          style="position: absolute; top: 4px; left: 12px; width: 4px; height: 4px; background: #4D96FF; border: 1px solid #444;">
+        </div>
+        <div
+          style="position: absolute; top: 10px; left: 8px; width: 4px; height: 4px; background: #FFD93D; border: 1px solid #444;">
+        </div>
+      </div>
+
+      <!-- Label -->
+      <span style="font-weight: bold;">Semiconductor</span>
+    </a>
+  </li>
+
+
+
+  <div
+    style="position: relative; width: 120px; height: 120px; border-radius: 50%; background: white; border: 2px solid #000; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+
+    <!-- Grid Pattern -->
+    <div style="position: absolute; width: 100%; height: 100%; background: 
+    repeating-linear-gradient(to right, #000 0px, #000 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(to bottom, #000 0px, #000 1px, transparent 1px, transparent 6px);">
+    </div>
+
+    <!-- Red Horizontal Bar -->
+    <div
+      style="position: absolute; top: 50%; left: 0; width: 100%; height: 10px; background: #cc0000; transform: translateY(-50%); opacity: 0.4;">
+    </div>
+
+    <!-- TSMC Text -->
+    <div
+      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -55%); color: #cc0000; font-weight: bold; font-size: 24px; font-family: Georgia, serif;">
+      tsmc
+    </div>
+
+  </div>
+
+</html>
