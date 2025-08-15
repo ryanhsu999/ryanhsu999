@@ -1,0 +1,51 @@
+
+
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Pictures from LRC/large/Critique_Form_-Best_Summer_Photo_Aug_19_2022_at_2_12_PM_1_.jpg" alt="Logo" width="20"
+              class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">EM_1 project</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <!-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#box1Modal">Dark</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Pictures from LRC/large/Apple_park_drawings_.copy_3HEIC.jpg_American_Photos_24_Exposures_.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">EM_2 project</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#box2Modal">Dark</button> -->
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="Pictures from LRC/large/Apple_park_drawings_.copy_3HEIC.jpg_American_Photos_24_Exposures_.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">EM_3 project</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#box2Modal">Dark</button> -->
+                  <div class="btn-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        
