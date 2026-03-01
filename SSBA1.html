@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+
+  <head>
+    <script src="./assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Semiconductor Skills Bridge Academy - SSBA program experience">
+    <meta name="author" content="Ryan Hsu">
+    <title>Semiconductor Skills Bridge Academy</title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+      body {
+        font-family: "Helvetica", "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: #000000;
+      }
+
+      .media-row {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        scroll-behavior: smooth;
+      }
+
+      .media-row img {
+        max-width: 280px;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.06);
+        flex-shrink: 0;
+      }
+
+      #posterThumb {
+        max-width: 100%;
+        height: auto;
+        cursor: zoom-in;
+      }
+
+      .modal-img {
+        width: 100%;
+        height: auto;
+        max-width: 900px;
+        margin: auto;
+        display: block;
+      }
+
+      .coursework-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .coursework-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .1);
+      }
+    </style>
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Header / Nav -->
+    <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
+        <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
+        <span class="fs-4">Ryan Hsu</span>
+      </a>
+
+      <ul class="nav nav-pills align-items-center gap-2">
+        <li class="nav-item"><a href="index.html" class="nav-link"><i class="bi bi-house-door-fill me-1"></i>Home</a>
+        </li>
+        <li class="nav-item"><a href="OhloneCollegeClass139A.html" class="nav-link"><i
+              class="bi bi-camera-fill me-1"></i>Art-139A</a></li>
+        <li class="nav-item"><a href="PD-150-05.html" class="nav-link"><i class="bi bi-journal-text me-1"></i>PD-150</a>
+        </li>
+        <li class="nav-item"><a href="SSBA1.html" class="nav-link active"><i class="bi bi-cpu me-1"></i>SSBA</a></li>
+        <li class="nav-item"><a href="other.Project.html" class="nav-link"><i
+              class="bi bi-lightbulb-fill me-1"></i>Other Projects</a></li>
+        <li class="nav-item"><a href="resume1.html" class="nav-link"><i
+              class="bi bi-file-earmark-person me-1"></i>Resume</a></li>
+      </ul>
+    </header>
+
+    <main class="flex-grow-1">
+      <!-- Introduction -->
+      <section class="container mb-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-light mb-3">Introduction</h2>
+            <p>SSBA provided practical training in semiconductor manufacturing, robotics, and cleanroom protocols to
+              support career readiness.</p>
+            <ul class="list-unstyled ms-3 mb-3">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Semiconductor manufacturing</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Robotics</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cleanroom &amp; safety</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Career preparation</li>
+            </ul>
+            <p class="mb-0">Built technical skills through hands-on work and collaborative learning.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="SSBA iamges/SSBA logo.png" alt="SSBA Logo" class="img-fluid rounded shadow-sm"
+              style="max-width: 500px; height: auto;">
+          </div>
+        </div>
+      </section>
+
+      <!-- Robot Project -->
+      <section class="container mb-5">
+        <hr class="featurette-divider">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6 text-center">
+            <figure class="figure">
+              <img src="SSBA iamges/Robot images of robot and arm .jpg"
+                alt="Robotic arm used in semiconductor manufacturing" class="figure-img img-fluid rounded shadow-sm"
+                style="max-width: 80%; min-width: 180px;" tabindex="0"
+                aria-label="Robotic arm used for automated semiconductor tasks">
+              <figcaption class="figure-caption text-muted small mt-2">Robotic arm designed for precise, automated
+                semiconductor manufacturing tasks.</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-light mb-3">Open-Source Robot Project</h2>
+            <p class="mb-3">Contributed to a team-based open-source robotics project, assisting with the assembly and
+              integration of a 3D-printed robotic arm.</p>
+            <ul class="list-unstyled ms-3 mb-3">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Team collaboration</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hands-on assembly</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Open-source robotics</li>
+            </ul>
+            <a class="btn btn-outline-secondary shadow-sm" href="https://www.youtube.com/watch?v=AIsVlgopqJc"
+              target="_blank" rel="noopener">
+              <i class="bi bi-youtube me-1"></i>Robot Arm Build Tutorial (Arduino)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hands-On Training -->
+      <section class="container mb-5">
+        <hr class="featurette-divider" />
+        <div class="row text-center mb-3">
+          <div class="col-12">
+            <h2 class="fw-light">Hands-On Training</h2>
+            <p class="text-muted mb-0">Cleanroom workflow, equipment exposure, and safety at partner sites.</p>
+          </div>
+        </div>
+        <div class="row align-items-start">
+          <div class="col-md-6 text-center">
+            <img src="SSBA iamges/lam.jpg" class="img-fluid rounded shadow-sm mb-2" style="max-width: 280px;"
+              alt="Lam Research" />
+            <h5>Lam Research</h5>
+            <p class="mb-0">Wafer fabrication tools and process concepts.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="SSBA iamges/SRS.jpg" class="img-fluid rounded shadow-sm mb-2" style="max-width: 280px;"
+              alt="Integrated Technical Solutions" />
+            <h5>Integrated Technical Solutions (ITS)</h5>
+            <p class="mb-0">Equipment support and SEM imaging demonstrations.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Poster & Conference -->
+      <section class="container mb-5">
+        <hr class="featurette-divider" />
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-light mb-3">Poster &amp; Conference Presentation</h2>
+            <p class="mb-3">Co-authored and presented a robotics poster at a sensor technology conference.</p>
+            <ul class="list-unstyled ms-2 mb-0">
+              <li><i class="bi bi-people-fill text-primary me-2"></i>Research &amp; writing</li>
+              <li><i class="bi bi-mic-fill text-success me-2"></i>Conference presentation</li>
+              <li><i class="bi bi-chat-dots-fill text-warning me-2"></i>Industry conversations</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="d-flex justify-content-center">
+              <img id="posterThumb" src="SSBA iamges/ROS in Semiconductor Production.2pdf.jpg"
+                alt="Poster: Robot Operating System in Semiconductor Production"
+                class="img-fluid rounded shadow-sm mb-3"
+                style="max-width: 80%; height: auto; min-width: 180px; min-height: 180px;" tabindex="0" role="button"
+                aria-label="Open poster in a larger view" />
+            </div>
+            <small class="text-muted d-block">Click to enlarge.</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Poster Modal -->
+      <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-transparent border-0">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+            <img src="SSBA iamges/ROS in Semiconductor Production.2pdf.jpg"
+              alt="Poster: Robot Operating System in Semiconductor Production" class="modal-img rounded shadow" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Relevant Coursework -->
+      <section class="container mb-5">
+        <hr class="featurette-divider" />
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <h2 class="fw-light">Relevant Coursework</h2>
+            <p class="text-muted small">Selected coursework aligned with manufacturing, process control, and teamwork
+            </p>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="p-3 border rounded shadow-sm h-100 coursework-card">
+              <h6 class="fw-semibold mb-2"><i class="bi bi-clipboard me-2 text-secondary"></i>Project &amp; Process</h6>
+              <ul class="list-unstyled mb-0">
+                <li>Agile Project Management <span class="text-muted">(ETEC 121)</span></li>
+                <li>Standard Operating Procedures (SOPs)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 border rounded shadow-sm h-100 coursework-card">
+              <h6 class="fw-semibold mb-2"><i class="bi bi-gear me-2 text-secondary"></i>Manufacturing &amp; Quality
+              </h6>
+              <ul class="list-unstyled mb-0">
+                <li>Tolerancing &amp; GD&amp;T <span class="text-muted">(ETEC 926)</span></li>
+                <li>Blueprint Reading &amp; Manufacturing Documentation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-3 border rounded shadow-sm h-100 coursework-card">
+              <h6 class="fw-semibold mb-2"><i class="bi bi-shield me-2 text-secondary"></i>Safety &amp; Operations</h6>
+              <ul class="list-unstyled mb-0">
+                <li>Safety in Industry &amp; Compliance</li>
+                <li>Material Handling &amp; Inventory Control</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thank You -->
+      <section class="container mb-5" id="thank-you">
+        <hr class="featurette-divider" />
+        <div class="bg-light rounded-3 p-4 shadow-sm">
+          <h2 class="fw-light mb-3">Thank You</h2>
+          <p class="mb-3">Thank you to SSBA faculty, partners, sponsors, and classmates for their support.</p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><strong>Faculty mentors</strong> — Guidance throughout the internship</li>
+            <li class="mb-2"><strong>Lam Research &amp; ITS</strong> — Hands-on partner-site training</li>
+            <li class="mb-2"><strong>Chipmango &amp; SEMI Foundation</strong> — Program resources and funding</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Learn More -->
+      <section class="container mb-5">
+        <hr class="featurette-divider" />
+        <div class="bg-light rounded-3 p-4 shadow-sm">
+          <h2 class="fw-light mb-3">Learn More</h2>
+          <div class="d-flex flex-column align-items-start gap-2">
+            <a class="btn btn-outline-secondary shadow-sm"
+              href="https://www.ohlone.edu/article/news/ohlone-college-secures-semi-foundation-grant-launch-semiconductor-skills-bridge-academy"
+              target="_blank" rel="noopener">
+              <i class="bi bi-link-45deg me-2"></i> SSBA Grant Announcement
+            </a>
+            <a class="btn btn-outline-secondary shadow-sm"
+              href="https://www.ohlone.edu/article/news/empowering-next-generation-semiconductor-talent-highlights-summer-2025-semiconductor"
+              target="_blank" rel="noopener">
+              <i class="bi bi-link-45deg me-2"></i> Summer 2025 SSBA Highlights
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-body-secondary py-5 mt-auto">
+      <div class="container">
+        <p class="float-end mb-1"><a href="#">Back to top</a></p>
+        <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
+        <p class="mb-0">Every day we make decisions and use tools to empower others.</p>
+        <p class="small mt-3">This page documents my experience and learnings from the Semiconductor Skills Bridge
+          Academy program at Ohlone College during summer 2025.</p>
+      </div>
+    </footer>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      console.assert(document.getElementById('posterModal'), 'Missing #posterModal element.');
+      console.assert(document.getElementById('posterThumb'), 'Missing #posterThumb element.');
+
+      function isBootstrapReady() {
+        return typeof window.bootstrap !== 'undefined' && typeof window.bootstrap.Modal === 'function';
+      }
+
+      function loadScript(src) {
+        return new Promise((resolve, reject) => {
+          const s = document.createElement('script');
+          s.src = src;
+          s.async = true;
+          s.onload = () => resolve();
+          s.onerror = () => reject(new Error('Failed to load script: ' + src));
+          document.head.appendChild(s);
+        });
+      }
+
+      function initPosterModal() {
+        const thumb = document.getElementById('posterThumb');
+        const modalEl = document.getElementById('posterModal');
+        if (!thumb || !modalEl) return;
+
+        if (!isBootstrapReady()) {
+          console.error('Bootstrap Modal API not available.');
+          return;
+        }
+
+        const modal = window.bootstrap.Modal.getOrCreateInstance(modalEl);
+        thumb.addEventListener('click', () => modal.show());
+        thumb.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            modal.show();
+          }
+        });
+      }
+
+      (async function boot() {
+        if (!isBootstrapReady()) {
+          try {
+            await loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js');
+          } catch (e) {
+            console.error(e);
+          }
+        }
+        initPosterModal();
+      })();
+    </script>
+  </body>
+
+</html>
