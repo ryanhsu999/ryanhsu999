@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+  <head>
+    <script src="./assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Nav test </title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+
+      body {
+        font-family: "Helvetica", "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        min-height: 100vh;
+        /* background-color: #000000; */
+        color: #000000;
+      }
+
+      /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #0da776, #181110);
+        Gradient background */
+    </style>
+
+
+
+
+
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Apple Style Menu</title>
+      <style>
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+        }
+
+        .navbar {
+          display: flex;
+          justify-content: center;
+          gap: 40px;
+          padding: 15px;
+          background: #f5f5f7;
+        }
+
+        .nav-item {
+          position: relative;
+          cursor: pointer;
+          font-size: 14px;
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 900px;
+          background: white;
+          padding: 40px;
+          display: none;
+          gap: 60px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-item:hover .dropdown {
+          display: flex;
+        }
+
+        .column h3 {
+          font-size: 14px;
+          color: gray;
+          margin-bottom: 15px;
+        }
+
+        .column a {
+          display: block;
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          margin: 8px 0;
+        }
+
+        .column a.small {
+          font-size: 14px;
+          color: #333;
+        }
+
+        .column a:hover {
+          text-decoration: underline;
+        }
+
+        /* ONLY opens when active */
+        .nav-item.active .dropdown {
+          display: flex;
+        }
+
+        .column h3 {
+          font-size: 14px;
+          color: gray;
+        }
+
+        .column a {
+          display: block;
+          text-decoration: none;
+          color: black;
+          margin: 8px 0;
+        }
+      </style>
+    </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="nav-item">iPhone
+        <div class="dropdown">
+
+          <!-- <div class="column">
+            <h3>Explore iPhone</h3>
+            <a href="#">Explore All iPhone</a>
+            <a href="#">iPhone 17 Pro</a>
+            <a href="#">iPhone Air</a>
+            <a href="#">iPhone 17</a>
+            <a href="#">iPhone 17e</a>
+            <a href="#">iPhone 16</a>
+            <br>
+            <a href="#" class="small">Compare iPhone</a>
+            <a href="#" class="small">Switch from Android</a>
+          </div> -->
+
+          <div class="column">
+            <h3>Shop iPhone</h3>
+            <li><a class="dropdown-item" href="OhloneCollegeClass139A.html">Art-139A</a></li>
+            <li><a class="dropdown-item" href="PD-150-05.html"><i class="bi bi-briefcase-fill me-2"></i>PD-150</a>
+            </li>
+            <li><a class="dropdown-item" href="SSBA1.html"><i class="bi bi-graph-up-arrow me-2"></i>SSBA</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3>More from iPhone</h3>
+            <a href="#" class="small">iPhone Support</a>
+            <a href="#" class="small">AppleCare</a>
+            <a href="#" class="small">iOS 26</a>
+            <a href="#" class="small">Apple Intelligence</a>
+            <a href="#" class="small">Apps by Apple</a>
+            <a href="#" class="small">iPhone Privacy</a>
+            <a href="#" class="small">iCloud+</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+
+
+
+
+
+
+  <div class="navbar">
+
+
+  </div>
+  </div>
+
+  </head>
+
+  <body>
+    <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
+        <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
+        <span class="fs-4">Ryan Hsu</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav nav-pills align-items-center gap-2">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active" aria-current="page">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="z1 logos school/ohlonelogo-symbol-1.jpg" alt="Ohlone College Logo" width="30" class="me-2">
+              Ohlone College
+            </a>
+            <ul class="dropdown-menu">
+
+              <div class="dropdown">
+                <div class="column">
+                  <h3>Explore</h3>
+                  <a href="#">iPhone 17</a>
+                  <a href="#">iPhone 16</a>
+                </div>
+
+                <div class="column">
+                  <h3>Shop</h3>
+                  <a href="#">Buy iPhone</a>
+                  <a href="#">Accessories</a>
+                </div>
+              </div>
+
+              <div class="navbar">
+                <div class="nav-item" id="iphoneBtn">
+                  iPhone
+
+                  <div class="dropdown">
+                    <div class="column">
+                      <h3>Explore</h3>
+                      <a href="#">iPhone 17</a>
+                      <a href="#">iPhone 16</a>
+                    </div>
+
+                    <div class="column">
+                      <h3>Shop</h3>
+                      <a href="#">Buy iPhone</a>
+                      <a href="#">Accessories</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <script>
+                const btn = document.getElementById("iphoneBtn");
+
+                // Toggle on click
+                btn.addEventListener("click", function (e) {
+                  e.stopPropagation();
+                  btn.classList.toggle("active");
+                });
+
+                // Close when clicking outside
+                document.addEventListener("click", function () {
+                  btn.classList.remove("active");
+                });
+              </script>
+
+
+
+
+
+
+              <li><a class="dropdown-item" href="OhloneCollegeClass139A.html">Art-139A</a></li>
+              <li><a class="dropdown-item" href="PD-150-05.html"><i class="bi bi-briefcase-fill me-2"></i>PD-150</a>
+              </li>
+              <li><a class="dropdown-item" href="SSBA1.html"><i class="bi bi-graph-up-arrow me-2"></i>SSBA</a></li>
+            </ul>
+          </li>
+
+
+
+
+
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="z1 logos school/SJSU University monogram_4cp_Blue.png" alt="SJSU Logo" width="30" class="me-2 ">
+              San Jose State University
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="OhloneCollegeClass139A.html">Art-139A</a></li>
+              <li><a class="dropdown-item" href="PD-150-05.html"><i class="bi bi-briefcase-fill me-2"></i>PD-150</a>
+              </li>
+              <li><a class="dropdown-item" href="SSBA1.html"><i class="bi bi-graph-up-arrow me-2"></i>SSBA</a></li>
+            </ul>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a href="other.Project.html" class="nav-link">
+              <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resume1.html" class="nav-link">
+              <i class="bi bi-file-earmark-person me-1"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+    <div class="container">
+      <section class="py-5 container">
+        <div class="row align-items-center py-lg-5">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img src="./ryanhsu.jpg" alt="Ryan Hsu waving Hello" class="img-fluid rounded shadow"
+              style="max-width: 300px;">
+          </div>
+
+          <!-- <div class="container">
+      <section class="py-5">
+        <div class="row align-items-center py-lg-5">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <img src="./ryanhsu.jpg" alt="Ryan Hsu waving Hello" class="img-fluid rounded shadow"
+              style="max-width: 250px;">
+          </div>
+                <p class="fs-4" style="font-size: 1.5rem;">
+              This website showcases my work and projects, including experiences from <span class="fw-semibold">Ohlone
+                College Art-139A</span> where I learned digital art and design. Feel free to explore my projects,
+              resume, and other works using the navigation above. -->
+
+          <div class="col-lg-8 mx-auto">
+            <h1 class="mb-3 fw- text-primary">Welcome to my E-Portfolio website</h1>
+            <p class="fs-5">
+              Hi, I'm <span class="fw-semibold">Ryan Hsu</span>, a student at <span class="fw-semibold">Ohlone
+                College</span> with plans to transfer to <span class="fw-semibold">CSU East Bay (CSUEB)</span> or
+              <span class="fw-semibold">San Jose State University (SJSU)</span> in the future.
+              <br><br>
+              I am an open-minded, honest, and reliable team player who values collaboration and believes that
+              everyone
+              brings unique ideas to the table. My interests include strategy &amp; design, photography, digital
+              art, and gardening.
+              <br><br>
+
+
+
+              This website showcases my work and projects, including highlights from courses like <span
+                class="fw-semibold">ETHN-100: Introduction
+                to Ethnic Studies</span> featuring the “Ban Voyage” book project. Explore to discover my creative
+              journey,
+              skills, and experiences across digital art, design, and more.
+            </p>
+
+            <p>
+            <p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <header class="border-bottom sticky-top bg-white">
+      <nav class="container d-flex align-items-center justify-content-between py-3">
+        <a href="./index.html" class="text-decoration-none link-body-emphasis">
+          <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="32" class="rounded">
+        </a>
+        <ul class="nav gap-4 ms-auto">
+          <li><a href="index.html" class="nav-link text-dark fw-500 small">Home</a></li>
+          <li><a href="#" class="nav-link text-dark fw-500 small">Ohlone</a></li>
+          <li><a href="#" class="nav-link text-dark fw-500 small">SJSU</a></li>
+          <li><a href="other.Project.html" class="nav-link text-dark fw-500 small">Projects</a></li>
+          <li><a href="resume1.html" class="nav-link text-dark fw-500 small">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-4">Welcome to my Portfolio</h1>
+          <p class="fs-6 text-secondary mb-3">
+            Hi, I'm <span class="fw-semibold">Ryan Hsu</span>, a student at <span class="fw-semibold">Ohlone
+              College</span> with interests in design, photography, and digital art.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="./ryanhsu.jpg" alt="Ryan Hsu" class="img-fluid rounded" style="max-width: 280px;">
+        </div>
+      </div>
+    </section>
+    <!-- <div class="card shadow-sm border-0 mb-4">
+              <div class="card-body">
+                <h1 class="card-title mb-3 text-primary fw-bold">Welcome to my E-portfolio</h1>
+                <p class="card-text fs-5">
+                  Hi, I'm <span class="fw-semibold">Ryan Hsu</span>, a student at <span class="fw-semibold">Ohlone College</span> aiming to transfer to <span class="fw-semibold">CSU East Bay (CSUEB)</span>.
+                  <br><br>
+                  I’m an open-minded, honest, and reliable team player who values collaboration and believes everyone brings unique ideas to the table. My interests include <span class="text-success">strategy &amp; design</span>, <span class="text-success">photography</span>, <span class="text-success">digital art</span>, and <span class="text-success">gardening</span>.
+                </p>
+              </div>
+            </div> -->
+
+    <!-- "exploring majors in graphic design and tourism" -->
+
+
+
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+
+        </p>
+        <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
+        <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
+
+        <header>
+          <div class="px-3 py-2 text-bg-dark border-bottom">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                  href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use>
+                  </svg> </a>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li> <a href="#" class="nav-link text-secondary"> <svg class="bi d-block mx-auto mb-1" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#home"></use>
+                      </svg>
+                      Home
+                    </a> </li>
+                  <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#speedometer2"></use>
+                      </svg>
+                      Dashboard
+                    </a> </li>
+                  <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#table"></use>
+                      </svg>
+                      Orders
+                    </a> </li>
+                  <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#grid"></use>
+                      </svg>
+                      Products
+                    </a> </li>
+                  <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24"
+                        height="24" aria-hidden="true">
+                        <use xlink:href="#people-circle"></use>
+                      </svg>
+                      Customers
+                    </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="px-3 py-2 border-bottom mb-3">
+            <div class="container d-flex flex-wrap justify-content-center">
+              <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search"> <input type="search"
+                  class="form-control" placeholder="Search..." aria-label="Search"> </form>
+              <div class="text-end"> <button type="button" class="btn btn-light text-dark me-2">Login</button> <button
+                  type="button" class="btn btn-primary">Sign-up</button> </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </footer>
+
+
+    <nav class="navbar navbar-expand-xxl navbar-dark bg-dark" aria-label="Seventh navbar example">
+      <div class="container-fluid"> <a class="navbar-brand" href="#">Expand at xxl</a> <button class="navbar-toggler"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl"
+          aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+            <li class="nav-item"> <a class="nav-link disabled" aria-disabled="true">Disabled</a> </li>
+            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search"> <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <header class="border-bottom bg-white sticky-top">
+      <div class="container d-flex align-items-center justify-content-between py-2">
+
+        <!-- 🔹 Left: Logo + Name -->
+        <a href="index.html" class="d-flex align-items-center text-decoration-none">
+          <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
+
+          <span class="fs-5 fw-semibold text-dark">Ryan Hsu</span>
+        </a>
+
+        <!-- 🔹 Center: Navigation -->
+        <ul class="nav nav-pills align-items-center gap-2">
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">
+              <i class="bi bi-house-door-fill me-1"></i> Home
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-camera-fill me-1"></i> Coursework
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="OhloneCollegeClass139A.html">
+                  <i class="bi bi-palette-fill me-2"></i>Art-139A</a></li>
+              <li><a class="dropdown-item" href="PD-150-05.html">
+                  <i class="bi bi-briefcase-fill me-2"></i>PD-150</a></li>
+              <li><a class="dropdown-item" href="SSBA1.html">
+                  <i class="bi bi-graph-up-arrow me-2"></i>SSBA</a></li>
+
+
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="other.Project.html" class="nav-link">
+              <i class="bi bi-lightbulb-fill me-1"></i> Projects
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="resume1.html" class="nav-link">
+              <i class="bi bi-file-earmark-person me-1"></i> Resume
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- 🔹 Right: External Logo (optional badge)
+        <img
+          src="https://cdn.brandfetch.io/id14WvjJiU/w/316/h/316/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1769324749744"
+          alt="Brand logo" width="36"> -->
+
+      </div>
+    </header>
+
+
+
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
