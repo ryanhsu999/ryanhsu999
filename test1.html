@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+  <head>
+    <script src="./assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <title>PD-150 Career and Life Planning Portfolio</title>
+
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+      /* Navigation Bar Container */
+      .navbar {
+        backdrop-filter: blur(20px);
+        /* Premium frosted-glass effect */
+        -webkit-backdrop-filter: blur(20px);
+        padding: 4px 0;
+        /* Ultra-slim height */
+        transition: background-color 0.3s ease;
+      }
+
+      /* Nav Links */
+      .navbar .nav-link {
+        color: rgba(0, 0, 0, 0.8) !important;
+        /* Soft white typography */
+        font-size: 20px;
+        /* Apple uses small, clean, crisp fonts */
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        padding: 0 16px !important;
+        transition: color 0.2s ease;
+      }
+
+
+      .navbar .nav-link:hover {
+        color: rgba(0, 0, 0, 1) !important;
+        /* Full white on hover */
+      }
+
+
+      /* Dropdown Menu styling to match */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        /* Smooth, modern rounded corners */
+        margin-top: 8px !important;
+        padding: 8px 0;
+      }
+
+      .dropdown-item {
+        color: rgba(245, 245, 247, 0.8) !important;
+        font-size: 12px;
+        padding: 6px 16px;
+      }
+
+      .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        color: #ffffff !important;
+      }
+
+      /* Dropdown hover animation */
+      .mega-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-20px);
+
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease,
+          visibility 0.3s;
+      }
+
+      .mega-menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+
+      :root {
+        --card-bg: #f6f7f9;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      .nav-link.active {
+        font-weight: 600;
+      }
+
+      .hero-card {
+        background: linear-gradient(180deg, var(--card-bg), #fff);
+        border-radius: 1rem;
+        padding: 2.25rem 1.25rem;
+      }
+
+      .featurette-divider {
+        margin: 2.25rem 0;
+      }
+
+      .meta {
+        color: #6c757d;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      .item {
+        margin-bottom: 1.5rem;
+      }
+
+      .section h2 {
+        margin-bottom: .75rem;
+      }
+
+      /* Unified layout that keeps dates on one side */
+      .item-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25rem .75rem;
+        align-items: flex-start;
+      }
+
+      .item-main {
+        flex: 1 1 520px;
+        min-width: 260px;
+      }
+
+      .date-col {
+        margin-left: auto;
+        white-space: nowrap;
+        color: #6c757d;
+      }
+
+      @media (max-width: 576px) {
+        .date-col {
+          width: 100%;
+          margin-left: 0;
+          margin-top: .25rem;
+        }
+      }
+
+      /* Media helpers */
+      .thumb {
+        max-width: 280px;
+        border-radius: .5rem;
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .06);
+      }
+
+      .thumb-sm {
+        max-width: 200px;
+      }
+
+      .media-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+      }
+
+      /* Print tweaks */
+      @media print {
+        .hero-card {
+          background: #fff !important;
+          border: 1px solid #dee2e6;
+        }
+
+        a[href]::after {
+          content: "";
+        }
+
+        .featurette-divider {
+          margin: 1rem 0;
+        }
+
+        .thumb,
+        .thumb-sm {
+          box-shadow: none;
+        }
+      }
+
+      /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #0da776, #181110);
+        Gradient background */
+    </style>
+
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+
+    <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
+        <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
+        <span class="fs-4">Ryan Hsu</span>
+      </a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-4 align-items-center">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="page">
+                  <i class="bi bi-house-door-fill me-1"></i> Home
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="projectsDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Ohlone College
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                  <li><a href="OhloneCollegeClass139A.html" class="dropdown-item">
+                      <i class="bi bi-camera-fill me-1"></i> Art-139A
+                    </a></li>
+                  <li><a href="PD-150-05.html" class="dropdown-item">
+                      <i class="bi bi-journal-text me-1"></i> PD-150
+                    </a></li>
+                  <li><a href="SSBA1.html" class="dropdown-item">
+                      <i class="bi bi-cpu me-1"></i> SSBA
+                    </a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  San Jose State University
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sjsuDropdown">
+                  <li><a href="SJSU.html" class="dropdown-item">
+                      <i class="bi bi-cpu me-1"></i> Main Page
+                    </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="other.Project.html" class="nav-link">
+                  <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="resume1.html" class="nav-link">
+                  <i class="bi bi-file-earmark-person me-1"></i> Resume
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- new nav bar end -->
+
+
+
+    <div class="container">
+      <section class="py-5 text-center">
+        <h1 class="fw-bold mb-3">PD-150 Career and Life Planning Portfolio</h1>
+        <h4 class="mb-1">Ohlone College</h4>
+        <p class="lead mb-2">Course Dates: June 24, 2024 – August 1, 2024</p>
+      </section>
+      <div class="mb-5">
+
+        <h1 class=" fw-light">Introduction</h1>
+        <p>
+          This portfolio was the final assignment for this Course: PD-150 Career and Life Planning.
+        </p>
+
+
+        <hr class="featurette-divider">
+
+      </div>
+      <div class="mb-5">
+
+        <h1 class="fw-light"> Quantitive Achievements </h1>
+
+        <p> I have a certificates in Digital Photography and culinary arts from Mission Valley Regional Occupational
+          Program (ROP).
+        <p>
+        <p>I have experience in games Openttd, and Transport fever 2.
+        <p>
+        <p>I obtained a Class C driver's license on October 18, 2024, successfully passing both the written and
+          driving
+          tests.</p>
+        <p>
+          <br />
+
+
+          <hr class="featurette-divider">
+      </div>
+      <div class="mb-5">
+
+        <h1 class="fw-light"> Testimonies From Others Individuals </h1>
+        <p>
+        <p>
+          “Ryan is always willing to pitch in and help, even if it means trying something new.“
+          <br />
+          - Mary Fontanilla Instructional Assistant II Ohlone College English Learning Center (ELC).
+          <br />
+        </p>
+
+        </p>
+        <p>
+          “Ryan is a pleasant young man and a hard-working individual. As a teacher’n <!-- new nav bar end -->4ool.
+          <br />
+        </p>
+
+        <hr class="featurette-divider">
+
+        <br />
+
+      </div>
+    </div>
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+
+        <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
+        <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
+
+
+
+      </div>
+    </footer>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
