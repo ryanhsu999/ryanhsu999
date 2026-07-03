@@ -1,241 +1,211 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
-
-  <head></head>
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
 
   <head>
-    <script src="./assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Artwork Gallery: Digital 1 Photography - Ryan Hsu">
+    <meta name="author" content="Ryan Hsu">
+    <title>Ryan Hsu – Art-139A Portfolio</title>
 
-    <title>Art-139 </title>
-
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <style>
-      /* Navigation Bar Container */
-      .navbar {
-        backdrop-filter: blur(20px);
-        /* Premium frosted-glass effect */
-        -webkit-backdrop-filter: blur(20px);
-        padding: 4px 0;
-        /* Ultra-slim height */
-        transition: background-color 0.3s ease;
+      /* Global Theme Configuration */
+      :root {
+        --sjsu-blue: #0055a5;
+        --blur-effect: blur(20px);
+        --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      /* Nav Links */
-      .navbar .nav-link {
-        color: rgba(0, 0, 0, 0.8) !important;
-        /* Soft white typography */
-        font-size: 20px;
-        /* Apple uses small, clean, crisp fonts */
-        font-weight: 400;
-        letter-spacing: -0.01em;
-        padding: 0 16px !important;
-        transition: color 0.2s ease;
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
       }
 
-
-      .navbar .nav-link:hover {
-        color: rgba(0, 0, 0, 1) !important;
-        /* Full white on hover */
+      /* Premium Frosted Header Navigation */
+      .custom-header {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: var(--blur-effect);
+        -webkit-backdrop-filter: var(--blur-effect);
+        transition: var(--transition-smooth);
       }
 
+      .navbar-nav .nav-link {
+        color: rgba(33, 37, 41, 0.8) !important;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem !important;
+        border-radius: 8px;
+        transition: var(--transition-smooth);
+      }
 
-      /* Dropdown Menu styling to match */
+      .navbar-nav .nav-link:hover {
+        color: var(--sjsu-blue) !important;
+        background-color: rgba(0, 85, 165, 0.05);
+      }
+
+      /* Dynamic Card Scale Hover Interactions */
+      .portfolio-card {
+        border: none;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: var(--transition-smooth);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+      }
+
+      .portfolio-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .portfolio-card img {
+        transition: var(--transition-smooth);
+        object-fit: cover;
+        height: 240px;
+        /* Standardized uniform height for clean grid line symmetry */
+      }
+
+      /* Dropdown Overhaul */
       .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: var(--blur-effect);
+        border: 1px solid rgba(0, 0, 0, 0.08);
         border-radius: 12px;
-        /* Smooth, modern rounded corners */
-        margin-top: 8px !important;
-        padding: 8px 0;
+        padding: 0.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       }
 
       .dropdown-item {
-        color: rgba(245, 245, 247, 0.8) !important;
-        font-size: 12px;
-        padding: 6px 16px;
+        color: #2d3748 !important;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        transition: var(--transition-smooth);
       }
 
       .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
+        background-color: rgba(0, 85, 165, 0.08) !important;
+        color: var(--sjsu-blue) !important;
       }
 
-      /* Dropdown hover animation */
-      .mega-menu {
+      /* Section Header Dividers */
+      .gallery-divider {
+        position: relative;
+        padding-bottom: 1rem;
+        margin-bottom: 2.5rem;
+        font-weight: 700;
+        color: #212529;
+      }
+
+      .gallery-divider::after {
+        content: '';
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #111;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transform: translateY(-20px);
-
-        transition:
-          opacity 0.3s ease,
-          transform 0.3s ease,
-          visibility 0.3s;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 4px;
+        background-color: var(--sjsu-blue);
+        border-radius: 2px;
       }
-
-      .mega-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-
-      /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #0da776, #181110);
-        Gradient background */
     </style>
+  </head>
 
+  <body class="d-flex flex-column min-vh-100 bg-light">
 
-  <body>
+    <header class="custom-header border-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center text-decoration-none me-auto">
+            <img src="pictures/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="36" height="36"
+              class="me-2 rounded-circle border">
+            <span class="fs-4 fw-semibold tracking-tight text-dark">Ryan Hsu</span>
+          </a>
 
-    <body class="d-flex flex-column min-vh-100">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                  <i class="bi bi-house-door me-1"></i> Home
+                </a>
+              </li>
 
-      <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
-        <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
-          <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
-          <span class="fs-4">Ryan Hsu</span>
-        </a>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" id="ohloneDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="" class="me-1"
+                    style="height: 20px; width: 20px; object-fit: contain;">
+                  Ohlone College
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="ohloneDropdown">
+                  <li><a href="OhloneCollegeClass139A.html" class="dropdown-item"><i
+                        class="bi bi-camera me-2 text-secondary"></i>Art-139A</a></li>
+                  <li><a href="PD-150-05.html" class="dropdown-item"><i
+                        class="bi bi-journal-text me-2 text-secondary"></i>PD-150</a></li>
+                  <li><a href="SSBA1.html" class="dropdown-item"><i class="bi bi-cpu me-2 text-secondary"></i>SSBA</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a href="other.Project.html" class="dropdown-item"><i
+                        class="bi bi-lightbulb me-2 text-warning"></i>Other Projects</a></li>
+                </ul>
+              </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  San José State University
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sjsuDropdown">
+                  <li><a href="SJSU.html" class="dropdown-item"><i class="bi bi-mortarboard me-2"></i>Main Platform
+                      Portal</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a href="SJSU.other.project.html" class="dropdown-item"><i
+                        class="bi bi-lightbulb me-2 text-warning"></i>SJSU Other Projects</a></li>
+                </ul>
+              </li>
 
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-4 align-items-center">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link" aria-current="page">
-
-                    <i class="bi bi-house-door-fill me-1"></i> Home
-                  </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="projectsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="Ohlone College Logo" class="me-1"
-                      width="60" height="35" style="height: 35px; width: 35px; object-fit: contain;">
-                    Ohlone College
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                    <a href="OhloneCollegeClass139A.html" class="nav-link">
-                      <i class="bi bi-camera-fill me-1"></i> Art-139A
-                    </a>
-                    <a href="PD-150-05.html" class="nav-link">
-                      <i class="bi bi-journal-text me-1"></i> PD-150
-                    </a>
-                    <a href="SSBA1.html" class="nav-link">
-                      <i class="bi bi-cpu me-1"></i> SSBA
-                    </a>
-                    <a href="other.Project.html" class="nav-link">
-                      <i class="bi bi-lightbulb-fill me-1"></i> Ohlone College Other Projects
-                    </a>
-                  </ul>
-                </li>
-
-
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <!-- <img src=" alt=" SJSU University monogram_Black" class="me-1"
-                      style="height: 40px; width: 40px; object-fit: contain;"> -->
-                    San Jose State University
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="sjsuDropdown">
-                    <li>
-
-                      <a href="sjsu.html" class="nav-link">
-                        <!-- <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->main page
-                        <!-- <a href="sjsu.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a>
-                      <a href="sjsu.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- <li class="nav-item">
-                  <a href="other.Project.html" class="nav-link">
-                    <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
-                  </a> -->
-                </li>
-
-                <li class="nav-item">
-                  <a href="resume1.html" class="nav-link">
-                    <i class="bi bi-file-earmark-person me-1"></i> Resume
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a href="resume1.html" class="nav-link"><i class="bi bi-file-earmark-person me-1"></i> Resume</a>
+              </li>
+            </ul>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <!-- new nav bar end -->
+    <main class="container flex-grow-1 py-5">
 
-      <!-- new nav bar end -->
-
-
-
-      <section class="py-5 text-center container">
-        <h1 class="fw-light">Artwork: Digital 1 Photography</h1>
-        <h4>Course: Digital 1 Photography & Ohlone College Class 139A </h4>
-        <h4>Program: Mission Valley Regional Occupational Program </h4>
-        <h4>School: American High School Fremont CA & Ohlone College</h4>
-        <h5> 8/17/2022 - 6/2/2023</h5>
-
-        <!-- <head>
-        <style>
-          #myDIV {
-            height: 200px;
-            border: 10px dashed black;
-            padding: 25px;
-            background-attachment: fixed;
-            background-position: center;
-          }
-        </style>
-      </head>
-
-      <body> -->
-
-
-
-
+      <!-- Course Info Section -->
+      <section class="text-center mb-5 py-4 bg-white rounded-4 shadow-sm border">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-2 fw-semibold">Course
+          Exhibition</span>
+        <h1 class="display-5 fw-bold text-dark mb-3">Artwork: Digital 1 Photography</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <p class="text-muted fs-5 mb-2"><strong>Course:</strong> Digital 1 Photography &amp; Ohlone College Class
+              139A</p>
+            <p class="text-muted mb-2"><strong>Program:</strong> Mission Valley Regional Occupational Program</p>
+            <p class="text-muted mb-3"><strong>School:</strong> American High School Fremont CA &amp; Ohlone College</p>
+            <span class="badge bg-secondary px-3 py-2">Academic Term: 8/17/2022 - 6/2/2023</span>
+          </div>
+        </div>
       </section>
-
-      <!-- 
-  <div class="col-lg-8 mx-auto">
-    <h1>Ryan Hsu</h1>
-    <h4>Course: Digital 1 Photography & Ohlone College Class 139A </h4>
-    <h4>School: American High School Fremont CA & Ohlone College</h4>
-    <h4>Program: Mission Valley Regional Occupational Program </h4>
-  </div>
-</div> -->
-
 
       </section>
       </div>
@@ -1443,18 +1413,51 @@
         <h1 class="fw-light">website html UI/UX for Digital 1 Photography </h1>
       </section>
 
+      <section>
 
-      <div class="album py-5 bg-body-tertiary">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="pictues/IMG_09A2A75C2C2B-1.jpg" class="card-img-top mb-5" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Website html UI/UX Prototyping One (Old)</h5>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
+
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="pictues/IMG_09A2A75C2C2B-1.jpg" class="card-img-top mb-5" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Website html UI/UX Prototyping One (Old)</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Website html UI/UX Prototyping Two (Latest)</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src=" Screen Shot 2023-05-16 at 11.49.59 PM.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">future plan</h5> -->
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1462,144 +1465,132 @@
             </div>
 
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">Website html UI/UX Prototyping Two (Latest)</h5>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
+
+
+
+            <div class="row row-cols-1 g-3 mt-4">
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <!-- <img src="pictues/Hsu_Senior_Cruise_best_picture__5_7_23C4.jpg" class="card-img-top" alt=""> -->
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Table of contents & Terms
+                    </h5>
+                    <h6>UX/UI:User interface design/ user interface engineering designing interfaces for all Devices.
+                    </h6>
+                    <h6>HTML (HyperText Markup Language) is ordinary markup language for web-based documents</h6>
+                    <h6>VS Code (Visual Studio Code) contribute debugging, syntax highlighting, intelligent code
+                      completion,
+                      snippets, and Git incorporation.</h6>
+                    <h6>Github: A website for hosting projects and development version control useing Git.</h6>
+                    <h6>Git is a free open source version control system.</h6>
+                    <h6>Github repository: record keeping for projects.</h6>
+                    <h6>Get bootstrap: HTML support website with code and examples of a webpage UX/UI</h6>
                   </div>
                 </div>
               </div>
             </div>
 
+            <div class="row row-cols-1 g-3 mt-4">
 
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src=" Screen Shot 2023-05-16 at 11.49.59 PM.png" class="card-img-top" alt="">
-                <div class="card-body">
-                  <!-- <h5 class="card-title">future plan</h5> -->
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <!-- <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Digital 1 Photography html UI/UX - How it was made</h5>
+                    <h6>
+                      This website was made using HTML due to the following: I want to learn something new for my skill
+                      set
+                      and it's free to host a website on Github.
+                    </h6>
+                    <h6>
+                      I believe that my website helps people learn about my work and it's good for future employers.
+                    </h6>
+                    <h6>
+                      The overall process starts with the portfolio interface: Prototyping the first idea on paper.
+                      Later it was rejected due to not looking good and being too complex to implement in the time of
+                      one
+                      week.
+                    </h6>
+                    <h6>
+                      So what I came up with another prototype. The advantage was that the pages look clear and more
+                      organized.
+                      And there is a nav that shows you what page you are on.
+                    </h6>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+            <div class="row row-cols-1 g-3 mt-4">
 
-
-
-
-          <div class="row row-cols-1 g-3 mt-4">
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <!-- <img src="pictues/Hsu_Senior_Cruise_best_picture__5_7_23C4.jpg" class="card-img-top" alt=""> -->
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Table of contents & Terms
-                  </h5>
-                  <h6>UX/UI:User interface design/ user interface engineering designing interfaces for all Devices.</h6>
-                  <h6>HTML (HyperText Markup Language) is ordinary markup language for web-based documents</h6>
-                  <h6>VS Code (Visual Studio Code) contribute debugging, syntax highlighting, intelligent code
-                    completion,
-                    snippets, and Git incorporation.</h6>
-                  <h6>Github: A website for hosting projects and development version control useing Git.</h6>
-                  <h6>Git is a free open source version control system.</h6>
-                  <h6>Github repository: record keeping for projects.</h6>
-                  <h6>Get bootstrap: HTML support website with code and examples of a webpage UX/UI</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row row-cols-1 g-3 mt-4">
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <!-- <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
-                <div class="card-body">
-                  <h5 class="card-title">Digital 1 Photography html UI/UX - How it was made</h5>
-                  <h6>
-                    This website was made using HTML due to the following: I want to learn something new for my skill
-                    set
-                    and it's free to host a website on Github.
-                  </h6>
-                  <h6>
-                    I believe that my website helps people learn about my work and it's good for future employers.
-                  </h6>
-                  <h6>
-                    The overall process starts with the portfolio interface: Prototyping the first idea on paper.
-                    Later it was rejected due to not looking good and being too complex to implement in the time of one
-                    week.
-                  </h6>
-                  <h6>
-                    So what I came up with another prototype. The advantage was that the pages look clear and more
-                    organized.
-                    And there is a nav that shows you what page you are on.
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row row-cols-1 g-3 mt-4">
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <!-- <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
-                <div class="card-body">
-                  <h5 class="card-title">Thank you</h5>
-                  <h6>
-                    VS code is used to write the HTML and Github is the host server. Using bootstrap and W3 School was a
-                    game changer
-                    because of the resourceful information on HTML.
-                  </h6>
-                  <h6>
-                    This website wouldn't be possible without the following people and tools:
-                  </h6>
-                  <h6>
-                    Digital 1 photography Photography Instructor Mr. Thomas Bartholomew-Couts for helping me to learn
-                    and
-                    grow.
-                  </h6>
-                  <h6>
-                    Github, Bootstrap, VS code
-                  </h6>
-                  <h6>
-                    Thank you again for visiting my website.
-                  </h6>
-                  <h6>
-                    If you are interested in viewing the source code Github repository URL
-                    <a href="https://github.com/ryanhsu999/ryanhsu999">Visit Github repository (update will happen with
-                      future projects)
-                  </h6>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <!-- <img src="pictues/UX_IU_update_5_7_23._C1jpg.jpg" class="card-img-top" alt=""> -->
+                  <div class="card-body">
+                    <h5 class="card-title">Thank you</h5>
+                    <h6>
+                      VS code is used to write the HTML and Github is the host server. Using bootstrap and W3 School was
+                      a
+                      game changer
+                      because of the resourceful information on HTML.
+                    </h6>
+                    <h6>
+                      This website wouldn't be possible without the following people and tools:
+                    </h6>
+                    <h6>
+                      Digital 1 photography Photography Instructor Mr. Thomas Bartholomew-Couts for helping me to learn
+                      and
+                      grow.
+                    </h6>
+                    <h6>
+                      Github, Bootstrap, VS code
+                    </h6>
+                    <h6>
+                      Thank you again for visiting my website.
+                    </h6>
+                    <h6>
+                      If you are interested in viewing the source code Github repository URL
+                      <a href="https://github.com/ryanhsu999/ryanhsu999">Visit Github repository (update will happen
+                        with
+                        future projects)
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <footer class="text-body-secondary py-5">
+
+      <footer class="bg-light text-muted py-5 border-top mt-auto">
         <div class="container">
-          <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-
-          </p>
-          <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
-          <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
-
-
+          <div class="row align-items-center">
+            <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+              <p class="mb-1 text-dark fw-medium">Ryan Hsu © 2022–2026. All rights reserved.</p>
+              <p class="small mb-2"><em>"Every day we make decisions and use tools that empower others."</em></p>
+              <p class="xsmall text-muted mb-0" style="font-size: 0.8rem;">
+                <a href="https://www.ohlone.edu/collegeadvancement/logos" target="_blank" rel="noopener"
+                  class="text-decoration-none text-muted border-bottom">Ohlone College logo</a> and
+                <a href="https://www.sjsu.edu/communications/brand/visual-style/university-marks/index.php"
+                  target="_blank" rel="noopener" class="text-decoration-none text-muted border-bottom">San Jose State
+                  University University Marks</a>
+                are registered trademarks of their respective owners.
+              </p>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+              <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+                <i class="bi bi-arrow-up-short me-1"></i>Back to top
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
 
-      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      <!-- Bootstrap Bundle JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>

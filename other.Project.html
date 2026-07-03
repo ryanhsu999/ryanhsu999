@@ -1,349 +1,373 @@
+\
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Other Projects and Creative Works - Ryan Hsu Portfolio">
     <meta name="author" content="Ryan Hsu">
-    <title>Other Projects</title>
-
-
+    <title>Ryan Hsu – Other Projects</title>
 
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <style>
-      /* Navigation Bar Container */
-      .navbar {
-        backdrop-filter: blur(20px);
-        /* Premium frosted-glass effect */
-        -webkit-backdrop-filter: blur(20px);
-        padding: 4px 0;
-        /* Ultra-slim height */
-        transition: background-color 0.3s ease;
+      /* Modern Design Variables */
+      :root {
+        --sjsu-gold: #e5a823;
+        --sjsu-blue: #0055a5;
+        --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        --blur-effect: blur(20px);
       }
 
-      /* Nav Links */
-      .navbar .nav-link {
-        color: rgba(0, 0, 0, 0.8) !important;
-        /* Soft white typography */
-        font-size: 20px;
-        /* Apple uses small, clean, crisp fonts */
-        font-weight: 400;
-        letter-spacing: -0.01em;
-        padding: 0 16px !important;
-        transition: color 0.2s ease;
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
       }
 
-
-      .navbar .nav-link:hover {
-        color: rgba(0, 0, 0, 1) !important;
-        /* Full white on hover */
+      /* Clean Sticky Navigation */
+      .custom-header {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: var(--blur-effect);
+        -webkit-backdrop-filter: var(--blur-effect);
+        transition: var(--transition-smooth);
       }
 
+      /* Refined Navigation Elements */
+      .navbar-nav .nav-link {
+        color: rgba(33, 37, 41, 0.8) !important;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem !important;
+        border-radius: 8px;
+        transition: var(--transition-smooth);
+      }
 
-      /* Dropdown Menu styling to match */
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link:focus {
+        color: var(--sjsu-blue) !important;
+        background-color: rgba(0, 85, 165, 0.05);
+      }
+
+      .navbar-nav .nav-link.active {
+        color: var(--sjsu-blue) !important;
+        font-weight: 600;
+      }
+
+      /* Dropdown Overhaul */
       .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: var(--blur-effect);
+        -webkit-backdrop-filter: var(--blur-effect);
+        border: 1px solid rgba(0, 0, 0, 0.08);
         border-radius: 12px;
-        /* Smooth, modern rounded corners */
-        margin-top: 8px !important;
-        padding: 8px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        padding: 0.5rem;
       }
 
       .dropdown-item {
-        color: rgba(245, 245, 247, 0.8) !important;
-        font-size: 12px;
-        padding: 6px 16px;
+        color: #2d3748 !important;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        transition: var(--transition-smooth);
       }
 
       .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
+        background-color: rgba(0, 85, 165, 0.08) !important;
+        color: var(--sjsu-blue) !important;
       }
 
-      /* Dropdown hover animation */
-      .mega-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #111;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transform: translateY(-20px);
-
-        transition:
-          opacity 0.3s ease,
-          transform 0.3s ease,
-          visibility 0.3s;
+      /* Hero Section Polish */
+      .profile-img-container {
+        position: relative;
+        display: inline-block;
       }
 
-      .mega-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+      .profile-img-style {
+        max-width: 290px;
+        transition: var(--transition-smooth);
       }
 
-      /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #0da776, #181110);
-        Gradient background */
+      .profile-img-container:hover .profile-img-style {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+      }
+
+      /* Utilities */
+      .lead-custom {
+        font-size: 1.15rem;
+        line-height: 1.75;
+        color: #4a5568;
+      }
+
+      /* Print Optimizations */
+      @media print {
+
+        .custom-header,
+        footer,
+        .btn {
+          display: none !important;
+        }
+
+        body {
+          color: #000;
+          background: #fff;
+        }
+      }
     </style>
+  </head>
 
+  <body class="d-flex flex-column min-vh-100">
 
-  <body>
+    <header class="custom-header border-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center text-decoration-none me-auto">
+            <img src="pictures/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="36" height="36"
+              class="me-2 rounded-circle border">
+            <span class="fs-4 fw-semibold tracking-tight text-dark">Ryan Hsu</span>
+          </a>
 
-    <body class="d-flex flex-column min-vh-100">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                  <i class="bi bi-house-door me-1"></i> Home
+                </a>
+              </li>
 
-      <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
-        <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
-          <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
-          <span class="fs-4">Ryan Hsu</span>
-        </a>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-4 align-items-center">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link" aria-current="page">
-
-                    <i class="bi bi-house-door-fill me-1"></i> Home
-                  </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="projectsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="Ohlone College Logo" class="me-1"
-                      width="60" height="35" style="height: 35px; width: 35px; object-fit: contain;">
-                    Ohlone College
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                    <a href="OhloneCollegeClass139A.html" class="nav-link">
-                      <i class="bi bi-camera-fill me-1"></i> Art-139A
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" id="ohloneDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="" class="me-1"
+                    style="height: 20px; width: 20px; object-fit: contain;">
+                  Ohlone College
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="ohloneDropdown">
+                  <li>
+                    <a href="OhloneCollegeClass139A.html" class="dropdown-item">
+                      <i class="bi bi-camera me-2 text-secondary"></i>Art-139A
                     </a>
-                    <a href="PD-150-05.html" class="nav-link">
-                      <i class="bi bi-journal-text me-1"></i> PD-150
+                  </li>
+                  <li>
+                    <a href="PD-150-05.html" class="dropdown-item">
+                      <i class="bi bi-journal-text me-2 text-secondary"></i>PD-150
                     </a>
-                    <a href="SSBA1.html" class="nav-link">
-                      <i class="bi bi-cpu me-1"></i> SSBA
+                  </li>
+                  <li>
+                    <a href="SSBA1.html" class="dropdown-item">
+                      <i class="bi bi-cpu me-2 text-secondary"></i>SSBA
                     </a>
-                    <a href="other.Project.html" class="nav-link">
-                      <i class="bi bi-lightbulb-fill me-1"></i> Ohlone College Other Projects
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a href="other.Project.html" class="dropdown-item">
+                      <i class="bi bi-lightbulb me-2 text-warning"></i>Other Projects
                     </a>
-                  </ul>
-                </li>
+                  </li>
+                </ul>
+              </li>
 
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  San José State University
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sjsuDropdown">
+                  <li>
+                    <a href="SJSU.html" class="dropdown-item">
+                      <i class="bi bi-mortarboard me-2"></i>Main Platform Portal
+                    </a>
+                  </li>
+                  <hr class="dropdown-divider">
 
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <!-- <img src=" alt=" SJSU University monogram_Black" class="me-1"
-                      style="height: 40px; width: 40px; object-fit: contain;"> -->
-                    San Jose State University
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="sjsuDropdown">
-                    <li>
+                  <li>
+                    <a href="SJSU.other.project.html" class="dropdown-item">
+                      <i class="bi bi-lightbulb me-2 text-warning"></i>SJSU Other Projects
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
-                      <a href="sjsu.html" class="nav-link">
-                        <!-- <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->main page
-                        <!-- <a href="sjsu.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a>
-                      <a href="sjsu.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- <li class="nav-item">
-                  <a href="other.Project.html" class="nav-link">
-                    <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
-                  </a> -->
-                </li>
-
-                <li class="nav-item">
-                  <a href="resume1.html" class="nav-link">
-                    <i class="bi bi-file-earmark-person me-1"></i> Resume
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a href="resume1.html" class="nav-link">
+                  <i class="bi bi-file-earmark-person me-1"></i> Resume
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
-      </header>
-
-      <!-- new nav bar end -->
-
-
-      <!-- new nav bar end -->
-
-      <main class="container">
-        <section class="py-5 text-center bg-light rounded-4 shadow-sm mb-5">
-          <h2 class="fw-bold mb-3">
-            <i class="bi bi-lightbulb-fill me-2 text-warning"></i>Other Projects
-          </h2>
-          <p class="lead mb-2">
-            Explore a collection of my creative and academic works that don’t have a dedicated page.
-          </p>
-          <span class="badge bg-primary fs-6 py-2 px-4 mt-3">
-            <i class="bi bi-calendar-event me-1"></i> 9/27/24 - Present
-          </span>
-        </section>
-
-        <hr class="featurette-divider">
-
-        <section class="py-5">
-          <div class="row align-items-center flex-lg-row flex-column-reverse">
-            <div class="col-lg-7 mb-4 mb-lg-0">
-              <h3 class="fw-bold mb-2">
-                Ohlone College Course: <span class="text-primary">ETHN-100-01: Introduction to Ethnic Studies</span>
-              </h3>
-              <h5 class="mb-3">
-                Banned Book Project: <span class="text-secondary">Ban Voyage Vol. 1 (Fall 2024) – Jay Chou Struggle
-                  Studies</span>
-              </h5>
-              <h6 class="text-muted mb-4">
-                <i class="bi bi-calendar-event me-1"></i> 9/27/2024 – 12/12/2024
-              </h6>
-              <ul class="list-unstyled mb-4 ps-2">
-                <li class="mb-2">
-                  <i class="bi bi-book me-2 text-primary"></i>
-                  Created a children’s story exploring themes that may face challenges or bans in schools and libraries.
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-people me-2 text-primary"></i>
-                  Grateful to: The Lytton Center for the Public Good, and CCC Chancellor’s
-                  Office Ethnic Studies for funding.
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-star  me-2 text-primary"></i>
-                  Special thanks to Dr. August Samie and Librarian Nnekay FitzClarke for their generous support.
-                </li>
-                <li>
-                  <i class="bi bi-archive me-2 text-primary"></i>
-                  Stories are available for public viewing at the Ohlone Fremont Library.
-                </li>
-              </ul>
-              <h4 class="mb-3">Learn more about Ban Voyage</h4>
-              <div class="d-flex flex-column align-items-start gap-2">
-                <a class="btn btn-outline-secondary shadow-sm"
-                  href="https://www.ohlone.edu/article/news/ohlone-college-unveils-ban-voyage-ohlone-college-banned-book-project-inaugural"
-                  target="_blank" rel="noopener">
-                  <i class="bi bi-link-45deg me-2"></i>
-                  Ohlone College Unveils Ban Voyage: Inaugural Children's Book
-                </a>
-                <a class="btn btn-outline-secondary shadow-sm"
-                  href="https://www.ohlone.edu/sites/default/files/groups/Lytton_Center_Group/ban_voyage_grant_report.pdf"
-                  target="_blank" rel="noopener">
-                  <i class="bi bi-file-earmark-pdf me-2"></i>
-                  Ban Voyage: Grant Report (PDF)
-                </a>
+      </div>
+    </header>
 
 
-              </div>
-            </div>
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <div class="image-row">
-                <figure class="text-center">
-                  <img src="CV pictures pagee/Ban Voyage cover V1.jpg" alt="Ban Voyage Cover Version 1 Fall 2024"
-                    width="220" class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
-                  <figcaption class="small text-muted mt-1">Ban Voyage Cover</figcaption>
-                </figure>
-                <figure class="text-center">
-                  <img src="./CV pictures pagee/1_Title_Jay_Chou_Struggles.jpg"
-                    alt="Ban Voyage Version 1 Fall 2024 Jay Chou Struggles title page, page one" width="220"
-                    class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
-                  <figcaption class="small text-muted mt-1">Jay Chou Struggles – Title Page</figcaption>
-                </figure>
-                <figure class="text-center">
-                  <img src="./other.project images/me reading book Photo Dec 09 2024, 11 25 29 AM.jpg"
-                    alt="Ryan reading Jay Chou Struggles in the Ohlone College Fremont Library" width="220"
-                    class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
-                  <figcaption class="small text-muted mt-1">Reading at Ohlone Library</figcaption>
-                </figure>
-              </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Section: Ban Voyage Project -->
+
+    <main class="container">
+      <section class="py-5 text-center bg-light rounded-4 shadow-sm mb-5">
+        <h2 class="fw-bold mb-3">
+          <i class="bi bi-lightbulb-fill me-2 text-warning"></i>Other Projects
+        </h2>
+        <p class="lead mb-2">
+          Explore a collection of my creative and academic works that don’t have a dedicated page.
+        </p>
+        <span class="badge bg-primary fs-6 py-2 px-4 mt-3">
+          <i class="bi bi-calendar-event me-1"></i> 9/27/24 - 6/12/26
+        </span>
+      </section>
+
+      <hr class="featurette-divider">
+
+      <section class="py-5">
+        <div class="row align-items-center flex-lg-row flex-column-reverse">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">
+              Ohlone College Course: <span class="text-primary">ETHN-100-01: Introduction to Ethnic Studies</span>
+            </h3>
+            <h5 class="mb-3">
+              Banned Book Project: <span class="text-secondary">Ban Voyage Vol. 1 (Fall 2024) – Jay Chou Struggle
+                Studies</span>
+            </h5>
+            <h6 class="text-muted mb-4">
+              <i class="bi bi-calendar-event me-1"></i> 9/27/2024 – 12/12/2024
+            </h6>
+            <ul class="list-unstyled mb-4 ps-2">
+              <li class="mb-2">
+                <i class="bi bi-book me-2 text-primary"></i>
+                Created a children’s story exploring themes that may face challenges or bans in schools and libraries.
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-people me-2 text-primary"></i>
+                Grateful to: The Lytton Center for the Public Good, and CCC Chancellor’s
+                Office Ethnic Studies for funding.
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-star  me-2 text-primary"></i>
+                Special thanks to Dr. August Samie and Librarian Nnekay FitzClarke for their generous support.
+              </li>
+              <li>
+                <i class="bi bi-archive me-2 text-primary"></i>
+                Stories are available for public viewing at the Ohlone Fremont Library.
+              </li>
+            </ul>
+            <h4 class="mb-3">Learn more about Ban Voyage</h4>
+            <div class="d-flex flex-column align-items-start gap-2">
+              <a class="btn btn-outline-secondary shadow-sm"
+                href="https://www.ohlone.edu/article/news/ohlone-college-unveils-ban-voyage-ohlone-college-banned-book-project-inaugural"
+                target="_blank" rel="noopener">
+                <i class="bi bi-link-45deg me-2"></i>
+                Ohlone College Unveils Ban Voyage: Inaugural Children's Book
+              </a>
+              <a class="btn btn-outline-secondary shadow-sm"
+                href="https://www.ohlone.edu/sites/default/files/groups/Lytton_Center_Group/ban_voyage_grant_report.pdf"
+                target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-pdf me-2"></i>
+                Ban Voyage: Grant Report (PDF)
+              </a>
+
+
             </div>
           </div>
-        </section>
-        <hr class="featurette-divider" />
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="image-row">
+              <figure class="text-center">
+                <img src="CV pictures pagee/Ban Voyage cover V1.jpg" alt="Ban Voyage Cover Version 1 Fall 2024"
+                  width="220" class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Ban Voyage Cover</figcaption>
+              </figure>
+              <figure class="text-center">
+                <img src="./CV pictures pagee/1_Title_Jay_Chou_Struggles.jpg"
+                  alt="Ban Voyage Version 1 Fall 2024 Jay Chou Struggles title page, page one" width="220"
+                  class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Jay Chou Struggles – Title Page</figcaption>
+              </figure>
+              <figure class="text-center">
+                <img src="./other.project images/me reading book Photo Dec 09 2024, 11 25 29 AM.jpg"
+                  alt="Ryan reading Jay Chou Struggles in the Ohlone College Fremont Library" width="220"
+                  class="mb-2 shadow rounded-3 border border-2 border-primary-subtle">
+                <figcaption class="small text-muted mt-1">Reading at Ohlone Library</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="featurette-divider" />
 
 
 
-        <section class="py-5">
-          <div class="row align-items-center flex-lg-row flex-column-reverse">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-              <div class="d-flex justify-content-center">
-                <figure class="text-center">
-                  <img id="posterThumb"
-                    src="other.project images/Visual_Art_Project_Assignment_&_Information__Version_One.jpg"
-                    alt="Poster: Visual Art Project Assignment & Information Version One"
-                    class="img-fluid rounded shadow-sm mb-3" style="max-width: 400px; height: auto;" tabindex="0"
-                    role="button" aria-label="Open poster in a larger view" />
-                  <figcaption class="small text-muted mt-1">Click to enlarge</figcaption>
-                </figure>
+      <section class="py-5">
+        <div class="row align-items-center flex-lg-row flex-column-reverse">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="d-flex justify-content-center">
+              <figure class="text-center">
+                <img id="posterThumb"
+                  src="other.project images/Visual_Art_Project_Assignment_&_Information__Version_One.jpg"
+                  alt="Poster: Visual Art Project Assignment & Information Version One"
+                  class="img-fluid rounded shadow-sm mb-3" style="max-width: 400px; height: auto;" tabindex="0"
+                  role="button" aria-label="Open poster in a larger view" />
+                <figcaption class="small text-muted mt-1">Click to enlarge</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">
+              Ohlone College Course: <span class="text-primary">ART-101-03 Art Appreciation</span>
+            </h3>
+            <h5 class="mb-3">
+              Visual Art Project <span class="text-secondary">Exploring Design & Creative Expression</span>
+            </h5>
+            <h6 class="text-muted mb-4">
+              <i class="bi bi-calendar-event me-1"></i> 8/25/2025 - 12/12/2025
+            </h6>
+            <ul class="list-unstyled mb-4 ps-2">
+              <li class="mb-2">
+                <i class="bi bi-palette me-2 text-primary"></i>
+                Explored visual design principles and creative expression through art.
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-pencil-square me-2 text-primary"></i>
+                Improved conceptual art skills and technical proficiency.
+              </li>
+            </ul>
+
+            <h4 class="mb-3">Key Skills & Topics</h4>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="p-3 border rounded shadow-sm">
+                  <h6 class="fw-semibold mb-2"><i class="bi bi-palette me-2 text-primary"></i>Design Principles</h6>
+                  <ul class="list-unstyled mb-0 small">
+                    <li>Color Theory</li>
+                    <li>Composition & Layout</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="p-3 border rounded shadow-sm">
+                  <h6 class="fw-semibold mb-2"><i class="bi bi-brush me-2 text-primary"></i>Art Techniques</h6>
+                  <ul class="list-unstyled mb-0 small">
+                    <li>Digital Media</li>
+                    <li>Creative Expression</li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-            <div class="col-lg-7 mb-4 mb-lg-0">
-              <h3 class="fw-bold mb-2">
-                Ohlone College Course: <span class="text-primary">ART-101-03 Art Appreciation</span>
-              </h3>
-              <h5 class="mb-3">
-                Visual Art Project <span class="text-secondary">Exploring Design & Creative Expression</span>
-              </h5>
-              <h6 class="text-muted mb-4">
-                <i class="bi bi-calendar-event me-1"></i> 8/25/2025 - 12/12/2025
-              </h6>
-              <ul class="list-unstyled mb-4 ps-2">
-                <li class="mb-2">
-                  <i class="bi bi-palette me-2 text-primary"></i>
-                  Explored visual design principles and creative expression through art.
-                </li>
-                <li class="mb-2">
-                  <i class="bi bi-pencil-square me-2 text-primary"></i>
-                  Improved conceptual art skills and technical proficiency.
-                </li>
-              </ul>
-
-              <h4 class="mb-3">Key Skills & Topics</h4>
-              <div class="row g-3">
-                <div class="col-12">
-                  <div class="p-3 border rounded shadow-sm">
-                    <h6 class="fw-semibold mb-2"><i class="bi bi-palette me-2 text-primary"></i>Design Principles</h6>
-                    <ul class="list-unstyled mb-0 small">
-                      <li>Color Theory</li>
-                      <li>Composition & Layout</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="p-3 border rounded shadow-sm">
-                    <h6 class="fw-semibold mb-2"><i class="bi bi-brush me-2 text-primary"></i>Art Techniques</h6>
-                    <ul class="list-unstyled mb-0 small">
-                      <li>Digital Media</li>
-                      <li>Creative Expression</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="row g-3">
+            <!-- <div class="row g-3">
                 <div class="col-12">
                   <div class="p-3 border rounded shadow-sm">
                     <h6 class="fw-semibold mb-2"><i class="bi bi-palette me-2 text-primary"></i>Design Principles</h6>
@@ -361,71 +385,121 @@
                       <li>Creative Expression</li>
                     </ul> -->
 
-            </div>
-          </div>
-        </section>
-
-        <!-- Poster Modal -->
-        <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-transparent border-0">
-              <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-              <img src="other.project images/Visual_Art_Project_Assignment_&_Information__Version_One.jpg"
-                alt="Poster: Visual Art Project Assignment & Information Version One"
-                class="modal-img rounded shadow" />
-            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Poster Modal -->
+      <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content bg-transparent border-0">
+            <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+            <img src="other.project images/Visual_Art_Project_Assignment_&_Information__Version_One.jpg"
+              alt="Poster: Visual Art Project Assignment & Information Version One" class="modal-img rounded shadow" />
+          </div>
         </div>
+      </div>
+      </div>
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+      <hr class="featurette-divider">
+
+      <!-- Section: Ohlone For Kids Interview -->
+      <section class="py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-12 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-2">
+              Ohlone For Kids <span class="text-primary">- Interview</span>
+            </h3>
+            <h5 class="mb-3 text-secondary">
+              Recently interviewed by a student attending the Ohlone for Kids (OFK) program.
+            </h5>
+            <h6 class="text-muted mb-4">
+              <i class="bi bi-calendar-event me-1"></i> June 2026
+            </h6>
+            <ul class="list-unstyled mb-4 ps-2">
+              <li class="mb-3">
+                <i class="bi bi-mic me-2 text-primary"></i>Shared personal experiences and insights with young learners.
+              </li>
+            </ul>
+            <a class="btn btn-outline-secondary shadow-sm btn-sm"
+              href="https://docs.google.com/document/u/0/d/1If_w0iN4_rpU8CJB6WZq6RsYyrXfNowq4wBQGW-n_YI/mobilebasic?pli=1.pdf"
+              target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-pdf me-2"></i>Link to Interview [External Document]
+            </a>
+          </div>
         </div>
-        </section>
+      </section>
 
+      <hr class="featurette-divider">
 
-
-
-
-        <hr class="featurette-divider">
-
-        <section class="py-5 text-center">
-          <h3 class="fw-bold mb-2"><i class="bi bi-emoji-smile me-2 text-success"></i>You are up to date with my
-            projects!
+      <!-- Section: Next Steps Callout -->
+      <section class="py-5 text-center bg-light rounded-4 mb-5 shadow-sm border border-secondary-subtle">
+        <div class="px-3 mx-auto" style="max-width: 680px;">
+          <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-3 fw-semibold">
+            <i class="bi bi-arrow-right-circle-fill me-1"></i> Future Academic Updates
+          </span>
+          <h3 class="fw-bold text-dark mb-3">
+            Going forward, all new projects will be showcased on the SJSU other projects page.
           </h3>
-          <h5 class="mb-2">Check back soon for more updates.</h5>
-          <span class="badge bg-secondary fs-6 py-2 px-4 mt-2">Next update: Date to be determined</span>
-        </section>
-      </main>
-
-      <footer class="text-body-secondary py-5">
-        <div class="container">
-          <p class="float-end mb-1">
-            <a href="#">Back to top</a>
+          <p class="text-muted small mb-4">
+            Thank you for exploring my Ohlone College archive. Click below to view my continuing work at San José State
+            University.
           </p>
-          <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
-          <p class="mb-0">Every day we make decisions and use tools to empower others.</p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="SJSU.other.project.html"
+              class="btn btn-primary btn-lg px-4 rounded-3 shadow-sm d-inline-flex align-items-center">
+              <i class="bi bi-mortarboard-fill me-2"></i> SJSU Other Projects Page
+            </a>
+            <a href="resume1.html"
+              class="btn btn-outline-secondary btn-lg px-4 rounded-3 d-inline-flex align-items-center">
+              <i class="bi bi-file-earmark-person me-2"></i> View Resume
+            </a>
+          </div>
         </div>
-      </footer>
-      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      </section>
+
+    </main>
+
+    <footer class="bg-light text-muted py-5 border-top mt-auto">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-1 text-dark fw-medium">Ryan Hsu © 2022–2026. All rights reserved.</p>
+            <p class="small mb-2"><em>"Every day we make decisions and use tools that empower others."</em></p>
+            <p class="xsmall text-muted mb-0" style="font-size: 0.8rem;">
+              <a href="https://www.ohlone.edu/collegeadvancement/logos" target="_blank" rel="noopener"
+                class="text-decoration-none text-muted border-bottom">Ohlone College logo</a> and
+              <a href="https://www.sjsu.edu/communications/brand/visual-style/university-marks/index.php"
+                target="_blank" rel="noopener" class="text-decoration-none text-muted border-bottom">San Jose State
+                University University Marks</a>
+              are registered trademarks of their respective owners.
+            </p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+              <i class="bi bi-arrow-up-short me-1"></i>Back to top
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-      console.assert(document.getElementById('posterModal'), 'Missing #posterModal element.');
-      console.assert(document.getElementById('posterThumb'), 'Missing #posterThumb element.');
-
       function isBootstrapReady() {
         return typeof window.bootstrap !== 'undefined' && typeof window.bootstrap.Modal === 'function';
-      }
-
-      function loadScript(src) {
-        return new Promise((resolve, reject) => {
-          const s = document.createElement('script');
-          s.src = src;
-          s.async = true;
-          s.onload = () => resolve();
-          s.onerror = () => reject(new Error('Failed to load script: ' + src));
-          document.head.appendChild(s);
-        });
       }
 
       function initPosterModal() {
@@ -448,16 +522,10 @@
         });
       }
 
-      (async function boot() {
-        if (!isBootstrapReady()) {
-          try {
-            await loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js');
-          } catch (e) {
-            console.error(e);
-          }
-        }
+      document.addEventListener("DOMContentLoaded", () => {
         initPosterModal();
-      })();
+      });
     </script>
+  </body>
 
 </html>

@@ -1,391 +1,344 @@
-<!doctype html>
-<html lang="en" class="h-100" data-bs-theme="auto">
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
 
   <head>
-    <script src="./assets/js/color-modes.js"></script>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="PD-150 Career and Life Planning Portfolio - Ryan Hsu">
+    <meta name="author" content="Ryan Hsu">
+    <title>Ryan Hsu – PD-150 Portfolio</title>
 
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <title>PD-150 Career and Life Planning Portfolio</title>
-
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
 
     <style>
-      /* Navigation Bar Container */
-      .navbar {
-        backdrop-filter: blur(20px);
-        /* Premium frosted-glass effect */
-        -webkit-backdrop-filter: blur(20px);
-        padding: 4px 0;
-        /* Ultra-slim height */
-        transition: background-color 0.3s ease;
-      }
-
-      /* Nav Links */
-      .navbar .nav-link {
-        color: rgba(0, 0, 0, 0.8) !important;
-        /* Soft white typography */
-        font-size: 20px;
-        /* Apple uses small, clean, crisp fonts */
-        font-weight: 400;
-        letter-spacing: -0.01em;
-        padding: 0 16px !important;
-        transition: color 0.2s ease;
-      }
-
-
-      .navbar .nav-link:hover {
-        color: rgba(0, 0, 0, 1) !important;
-        /* Full white on hover */
-      }
-
-
-      /* Dropdown Menu styling to match */
-      .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 12px;
-        /* Smooth, modern rounded corners */
-        margin-top: 8px !important;
-        padding: 8px 0;
-      }
-
-      .dropdown-item {
-        color: rgba(245, 245, 247, 0.8) !important;
-        font-size: 12px;
-        padding: 6px 16px;
-      }
-
-      .dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
-      }
-
-      /* Dropdown hover animation */
-      .mega-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #111;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transform: translateY(-20px);
-
-        transition:
-          opacity 0.3s ease,
-          transform 0.3s ease,
-          visibility 0.3s;
-      }
-
-      .mega-menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-
-
+      /* Global Theme Configuration */
       :root {
-        --card-bg: #f6f7f9;
+        --sjsu-blue: #0055a5;
+        --blur-effect: blur(20px);
+        --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       body {
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
       }
 
-      .nav-link.active {
-        font-weight: 600;
+      /* Premium Frosted Header Navigation */
+      .custom-header {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: var(--blur-effect);
+        -webkit-backdrop-filter: var(--blur-effect);
+        transition: var(--transition-smooth);
       }
 
-      .hero-card {
-        background: linear-gradient(180deg, var(--card-bg), #fff);
-        border-radius: 1rem;
-        padding: 2.25rem 1.25rem;
+      .navbar-nav .nav-link {
+        color: rgba(33, 37, 41, 0.8) !important;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem !important;
+        border-radius: 8px;
+        transition: var(--transition-smooth);
       }
 
-      .featurette-divider {
-        margin: 2.25rem 0;
+      .navbar-nav .nav-link:hover {
+        color: var(--sjsu-blue) !important;
+        background-color: rgba(0, 85, 165, 0.05);
       }
 
-      .meta {
-        color: #6c757d;
+      /* Interactive Portfolio Feature Cards */
+      .showcase-card {
+        border: none;
+        border-radius: 16px;
+        background: #ffffff;
+        transition: var(--transition-smooth);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
       }
 
-      ul {
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 0;
+      .showcase-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06) !important;
       }
 
-      .item {
-        margin-bottom: 1.5rem;
+      /* Dropdown Overhaul */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: var(--blur-effect);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 0.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       }
 
-      .section h2 {
-        margin-bottom: .75rem;
+      .dropdown-item {
+        color: #2d3748 !important;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        transition: var(--transition-smooth);
       }
 
-      /* Unified layout that keeps dates on one side */
-      .item-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: .25rem .75rem;
-        align-items: flex-start;
+      .dropdown-item:hover {
+        background-color: rgba(0, 85, 165, 0.08) !important;
+        color: var(--sjsu-blue) !important;
       }
 
-      .item-main {
-        flex: 1 1 520px;
-        min-width: 260px;
+      .achievement-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgba(0, 85, 165, 0.08);
+        color: var(--sjsu-blue);
       }
-
-      .date-col {
-        margin-left: auto;
-        white-space: nowrap;
-        color: #6c757d;
-      }
-
-      @media (max-width: 576px) {
-        .date-col {
-          width: 100%;
-          margin-left: 0;
-          margin-top: .25rem;
-        }
-      }
-
-      /* Media helpers */
-      .thumb {
-        max-width: 280px;
-        border-radius: .5rem;
-        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .06);
-      }
-
-      .thumb-sm {
-        max-width: 200px;
-      }
-
-      .media-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: .75rem;
-      }
-
-      /* Print tweaks */
-      @media print {
-        .hero-card {
-          background: #fff !important;
-          border: 1px solid #dee2e6;
-        }
-
-        a[href]::after {
-          content: "";
-        }
-
-        .featurette-divider {
-          margin: 1rem 0;
-        }
-
-        .thumb,
-        .thumb-sm {
-          box-shadow: none;
-        }
-      }
-
-      /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #0da776, #181110);
-        Gradient background */
     </style>
-
-
-
-
   </head>
 
+  <body class="d-flex flex-column min-vh-100 bg-light">
 
+    <header class="custom-header border-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center text-decoration-none me-auto">
+            <img src="pictures/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="36" height="36"
+              class="me-2 rounded-circle border">
+            <span class="fs-4 fw-semibold tracking-tight text-dark">Ryan Hsu</span>
+          </a>
 
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <body>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                  <i class="bi bi-house-door me-1"></i> Home
+                </a>
+              </li>
 
-    <body class="d-flex flex-column min-vh-100">
-
-
-      <header class="container d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
-        <a href="./index.html" class="d-flex align-items-center me-md-auto text-decoration-none link-body-emphasis">
-          <img src="pictues/Hsu_logo.psd_32723_copy_2.jpg" alt="Ryan Hsu logo" width="40" class="me-2 rounded">
-          <span class="fs-4">Ryan Hsu</span>
-        </a>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-4 align-items-center">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link" aria-current="page">
-
-                    <i class="bi bi-house-door-fill me-1"></i> Home
-                  </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="projectsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="Ohlone College Logo" class="me-1"
-                      width="60" height="35" style="height: 35px; width: 35px; object-fit: contain;">
-                    Ohlone College
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
-                    <a href="OhloneCollegeClass139A.html" class="nav-link">
-                      <i class="bi bi-camera-fill me-1"></i> Art-139A
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center" id="ohloneDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="z1 logos school/ohlonelogo-symbol-bw.jpg" alt="" class="me-1"
+                    style="height: 20px; width: 20px; object-fit: contain;">
+                  Ohlone College
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="ohloneDropdown">
+                  <li>
+                    <a href="OhloneCollegeClass139A.html" class="dropdown-item">
+                      <i class="bi bi-camera me-2 text-secondary"></i>Art-139A
                     </a>
-                    <a href="PD-150-05.html" class="nav-link">
-                      <i class="bi bi-journal-text me-1"></i> PD-150
+                  </li>
+                  <li>
+                    <a href="PD-150-05.html" class="dropdown-item">
+                      <i class="bi bi-journal-text me-2 text-secondary"></i>PD-150
                     </a>
-                    <a href="SSBA1.html" class="nav-link">
-                      <i class="bi bi-cpu me-1"></i> SSBA
+                  </li>
+                  <li>
+                    <a href="SSBA1.html" class="dropdown-item">
+                      <i class="bi bi-cpu me-2 text-secondary"></i>SSBA
                     </a>
-                    <a href="other.Project.html" class="nav-link">
-                      <i class="bi bi-lightbulb-fill me-1"></i> Ohlone College Other Projects
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a href="other.Project.html" class="dropdown-item">
+                      <i class="bi bi-lightbulb me-2 text-warning"></i>Other Projects
                     </a>
-                  </ul>
-                </li>
+                  </li>
+                </ul>
+              </li>
 
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  San José State University
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sjsuDropdown">
+                  <li>
+                    <a href="SJSU.html" class="dropdown-item">
+                      <i class="bi bi-mortarboard me-2"></i>Main Platform Portal
+                    </a>
+                  </li>
+                  <hr class="dropdown-divider">
+                  <li>
+                    <a href="SJSU.other.project.html" class="dropdown-item">
+                      <i class="bi bi-lightbulb me-2 text-warning"></i>SJSU Other Projects
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="sjsuDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <!-- <img src=" alt=" SJSU University monogram_Black" class="me-1"
-                      style="height: 40px; width: 40px; object-fit: contain;"> -->
-                    San Jose State University
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="sjsuDropdown">
-                    <li>
-
-                      <a href="SJSU.html" class="nav-link">
-                        <!-- <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->main page
-                        <!-- <a href="SJSU.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a>
-                      <a href="SJSU.html" class="nav-link">
-                        <img src="z1 logos school/SpartanSpirit-gray[4cp].png" alt="SJSU Spartan Logo" class="me-1"
-                          class="me-1" style="height: 25px; width: 25px; object-fit: contain;"></i> main page
-                      </a> -->
-                    </li>
-                  </ul>
-                </li>
-
-                <!-- <li class="nav-item">
-                  <a href="other.Project.html" class="nav-link">
-                    <i class="bi bi-lightbulb-fill me-1"></i> Other Projects
-                  </a> -->
-                </li>
-
-                <li class="nav-item">
-                  <a href="resume1.html" class="nav-link">
-                    <i class="bi bi-file-earmark-person me-1"></i> Resume
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item">
+                <a href="resume1.html" class="nav-link">
+                  <i class="bi bi-file-earmark-person me-1"></i> Resume
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <!-- new nav bar end -->
+    <main class="container flex-grow-1 py-5">
 
-      <!-- new nav bar end -->
+      <div class="text-center mb-5">
+        <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill mb-2 fw-semibold">Ohlone College
+          Coursework</span>
+        <h1 class="display-4 fw-bold text-dark">PD-150 Career and Life Planning Portfolio</h1>
+        <p class="text-muted fs-5">Course Dates: June 24, 2024 – August 1, 2024</p>
+        <div class="mx-auto bg-primary rounded" style="height: 3px; width: 60px;"></div>
+      </div>
 
+      <section class="showcase-card p-4 p-md-5 mb-5 border">
+        <div class="row align-items-center g-4">
+          <div class="col-md-12">
+            <h2 class="h3 fw-bold text-dark mb-3"><i class="bi bi-info-circle me-2 text-primary"></i>Introduction</h2>
+            <p class="text-muted fs-5 mb-0 leading-relaxed">
+              This comprehensive portfolio serves as the final capstone project and formal synthesis for the course
+              <strong>PD-150: Career and Life Planning</strong>. It consolidates strategic personal reflections,
+              milestone tracking, career alignment matrices, and foundational achievements targeted toward ongoing
+              professional development.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section class="showcase-card p-4 p-md-5 mb-5 border">
+        <h2 class="h3 fw-bold text-dark mb-4"><i class="bi bi-trophy me-2 text-primary"></i>Quantitative Achievements
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border bg-light p-3">
+              <div class="card-body">
+                <div class="achievement-icon mb-3"><i class="bi bi-patch-check-fill fs-5"></i></div>
+                <h5 class="fw-bold text-dark card-title">Professional ROP Certifications</h5>
+                <p class="card-text text-muted">
+                  Successfully completed comprehensive technical tracks to earn verified certificates in both
+                  <strong>Digital Photography</strong> and <strong>Culinary Arts</strong> from the Mission Valley
+                  Regional Occupational Program (ROP).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 border bg-light p-3">
+              <div class="card-body">
+                <div class="achievement-icon mb-3"><i class="bi bi-cpu-fill fs-5"></i></div>
+                <h5 class="fw-bold text-dark card-title">Strategic System Simulations</h5>
+                <p class="card-text text-muted">
+                  Developed foundational skills in spatial analysis, multi-modal asset deployment, and macro scale
+                  logistics infrastructure through advanced sandbox simulation testing engines including
+                  <strong>OpenTTD</strong> and <strong>Transport Fever 2</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card border bg-light p-3">
+              <div class="card-body d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="achievement-icon flex-shrink-0"><i class="bi bi-card-checklist fs-5"></i></div>
+                  <div>
+                    <h5 class="fw-bold text-dark mb-1">State Regulatory Licensing</h5>
+                    <p class="card-text text-muted mb-0">Obtained a California Class C Driver's License on October 18,
+                      2024, successfully clear-passing both the formal legislative regulations criteria exam and the
+                      practical operational assessment on the initial attempt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-card p-4 p-md-5 border rounded-4 bg-white shadow-sm mb-5">
+        <h2 class="h3 fw-bold mb-4" style="color: #0055A2; letter-spacing: -0.02em;">
+          <i class="bi bi-chat-quote me-2"></i>Professional Testimonials
+        </h2>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <!-- Professional Testimonials 1 -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm transition-hover"
+              style="border-radius: 8px; overflow: hidden; background: #FFFFFF;">
+              <div style="height: 4px; background-color: #0055A2;"></div>
+              <div class="card-body p-4 d-flex flex-column">
+                <p class="card-text fs-7 flex-grow-1" style="color: #515154; line-height: 1.6;">
+                  "Ryan is always willing to pitch in and help, even if it means trying something new.“
+                </p>
+                <div class="pt-3 mt-3 d-flex justify-content-between align-items-center"
+                  style="border-top: 1px solid #D2D2D2;">
+                  <span style="color: #939597;" class="small">
+                    <i class="bi bi-person-circle"></i> - Mary Fontanilla, Instructional Assistant II, Ohlone College
+                    English Learning Center (ELC).
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Testimonials 2 -->
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm transition-hover"
+              style="border-radius: 8px; overflow: hidden; background: #FFFFFF;">
+              <div style="height: 4px; background-color: #0055A2;"></div>
+              <div class="card-body p-4 d-flex flex-column">
+                <p class="card-text fs-7 flex-grow-1" style="color: #515154; line-height: 1.6;">
+                  “Ryan is a pleasant young man and a hard-working individual.”
+                </p>
+                <div class="pt-3 mt-3 d-flex justify-content-between align-items-center"
+                  style="border-top: 1px solid #D2D2D2;">
+                  <span style="color: #939597;" class="small">
+                    <i class="bi bi-person-circle"></i> - Ms. Ahmed, Education Specialist, American High School
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-light text-muted py-5 border-top mt-auto">
       <div class="container">
-        <section class="py-5 text-center">
-          <h1 class="fw-bold mb-3">PD-150 Career and Life Planning Portfolio</h1>
-          <h4 class="mb-1">Ohlone College</h4>
-          <p class="lead mb-2">Course Dates: June 24, 2024 – August 1, 2024</p>
-        </section>
-        <div class="mb-5">
-
-          <h1 class=" fw-light">Introduction</h1>
-          <p>
-            This portfolio was the final assignment for this Course: PD-150 Career and Life Planning.
-          </p>
-
-
-          <hr class="featurette-divider">
-
-        </div>
-        <div class="mb-5">
-
-          <h1 class="fw-light"> Quantitive Achievements </h1>
-
-          <p> I have a certificates in Digital Photography and culinary arts from Mission Valley Regional Occupational
-            Program (ROP).
-          <p>
-          <p>I have experience in games Openttd, and Transport fever 2.
-          <p>
-          <p>I obtained a Class C driver's license on October 18, 2024, successfully passing both the written and
-            driving
-            tests.</p>
-          <p>
-            <br />
-
-
-            <hr class="featurette-divider">
-        </div>
-        <div class="mb-5">
-
-          <h1 class="fw-light"> Testimonies From Others Individuals </h1>
-          <p>
-          <p>
-            “Ryan is always willing to pitch in and help, even if it means trying something new.“
-            <br />
-            - Mary Fontanilla Instructional Assistant II Ohlone College English Learning Center (ELC).
-            <br />
-          </p>
-
-          </p>
-          <p>
-            “Ryan is a pleasant young man and a hard-working individual. As a teacher’n <!-- new nav bar end -->4ool.
-            <br />
-          </p>
-
-          <hr class="featurette-divider">
-
-          <br />
-
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-1 text-dark fw-medium">Ryan Hsu © 2022–2026. All rights reserved.</p>
+            <p class="small mb-2"><em>"Every day we make decisions and use tools that empower others."</em></p>
+            <p class="xsmall text-muted mb-0" style="font-size: 0.8rem;">
+              <a href="https://www.ohlone.edu/collegeadvancement/logos" target="_blank" rel="noopener"
+                class="text-decoration-none text-muted border-bottom">Ohlone College logo</a> and
+              <a href="https://www.sjsu.edu/communications/brand/visual-style/university-marks/index.php"
+                target="_blank" rel="noopener" class="text-decoration-none text-muted border-bottom">San Jose State
+                University University Marks</a>
+              are registered trademarks of their respective owners.
+            </p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+              <i class="bi bi-arrow-up-short me-1"></i>Back to top
+            </a>
+          </div>
         </div>
       </div>
-      <footer class="text-body-secondary py-5">
-        <div class="container">
-          <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-          </p>
-
-          <p class="mb-1">Ryan Hsu ©2022-2026 All rights reserved</p>
-          <p class="mb-0"> Every day we make decisions and use tools to empower others.</p>
+    </footer>
 
 
-
-        </div>
-      </footer>
-
-      <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>
